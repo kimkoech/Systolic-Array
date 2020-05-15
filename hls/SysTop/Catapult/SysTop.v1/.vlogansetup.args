@@ -1,0 +1,6 @@
+8
+2048939549
+scverify/concat_sim_rtl_v_vcs/sysc/scverifyconcat_sim_rtl_v_vcssc_mainpwr/top.v 
+-full64 -q +v2k scverify/concat_sim_rtl_v_vcs/sysc/scverifyconcat_sim_rtl_v_vcssc_mainpwr/top.v -work VCS_SYSC_LIB -xoutlib scverify/concat_sim_rtl_v_vcs/sc_mainpwr.daidir/sysclib/AN.DB
+   /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/bin/vcs1 -Mcc=gcc -Mcplusplus=g++ -Masflags= -Mcfl=' -pipe -O -I/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/include ' -Mldflags=" -Wl,-E,-rpath /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib " -Mout=simv -Mamsrun="" -Mvcsaceobjs="" -Mobjects=" " -Msaverestoreobj= -Mcrt0="" -Mcrtn="" -Mcsrc="" -Msyslibs="-lncurses -L/usr/X11R6/lib64 -lX11 -ldl -ldl "
+-Xvlogan=0x1 -full64 -q +v2k  "scverify/concat_sim_rtl_v_vcs/sysc/scverifyconcat_sim_rtl_v_vcssc_mainpwr/top.v"  -work=VCS_SYSC_LIB  -xoutlib=scverify/concat_sim_rtl_v_vcs/sc_mainpwr.daidir/sysclib/AN.DB  +mixedhdl2    

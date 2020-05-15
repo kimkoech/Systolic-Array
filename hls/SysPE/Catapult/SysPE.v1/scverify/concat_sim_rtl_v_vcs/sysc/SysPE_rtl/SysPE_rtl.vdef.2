@@ -1,0 +1,46 @@
+.NAME
+ SysPE_rtl
+
+.SHORT_DESCRIPTION
+ SystemC-Verilog co-simulation
+
+.DESCRIPTION
+ vcs (TM) Simulator Interface
+
+.IMPLEMENTATIONS
+ 1  vcs  Verilog Import SysPE_rtl(SysPE_rtl)
+
+.CLASSES
+ 1 None
+
+
+.INPUT_PORTS
+ 1   clk   (BIT)   bool   (clk) BC
+ 2   rst   (BIT)   sc_logic   (rst) BC
+ 3   weight_in_val   (BIT)   sc_logic   (weight_in_val) BC
+ 4   weight_in_msg   (B(7 downto 0))   sc_lv   (weight_in_msg) BC
+ 5   act_in_val   (BIT)   sc_logic   (act_in_val) BC
+ 6   act_in_msg   (B(7 downto 0))   sc_lv   (act_in_msg) BC
+ 7   accum_in_val   (BIT)   sc_logic   (accum_in_val) BC
+ 8   accum_in_msg   (B(31 downto 0))   sc_lv   (accum_in_msg) BC
+ 9   act_out_rdy   (BIT)   sc_logic   (act_out_rdy) BC
+ 10   accum_out_rdy   (BIT)   sc_logic   (accum_out_rdy) BC
+ 11   weight_out_rdy   (BIT)   sc_logic   (weight_out_rdy) BC
+
+.OUTPUT_PORTS
+ 1   weight_in_rdy   (BIT)   sc_logic   (weight_in_rdy) BC
+ 2   act_in_rdy   (BIT)   sc_logic   (act_in_rdy) BC
+ 3   accum_in_rdy   (BIT)   sc_logic   (accum_in_rdy) BC
+ 4   act_out_val   (BIT)   sc_logic   (act_out_val) BC
+ 5   act_out_msg   (B(7 downto 0))   sc_lv   (act_out_msg) BC
+ 6   accum_out_val   (BIT)   sc_logic   (accum_out_val) BC
+ 7   accum_out_msg   (B(31 downto 0))   sc_lv   (accum_out_msg) BC
+ 8   weight_out_val   (BIT)   sc_logic   (weight_out_val) BC
+ 9   weight_out_msg   (B(7 downto 0))   sc_lv   (weight_out_msg) BC
+
+.PARAMETERS
+
+.HISTORY
+ None
+
+.END

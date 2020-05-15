@@ -1,0 +1,142 @@
+Command: vcs -full64 +libverbose -lca -psl -cm assert -debug -assert enable_diag -Mdir=scverify/concat_sim_rtl_v_vcs -debug_all -timescale=1ps/1ps -sysc=blocksync -load libnovas.so:FSDBDumpCmd +vcsd +memcbk -sysc=231 sc_main -o scverify/concat_sim_rtl_v_vcs/sc_mainpwr -LDFLAGS  -l scverify/concat_sim_rtl_v_vcs/elab.log
+Doing common elaboration 
+                         Chronologic VCS (TM)
+      Version L-2016.06-SP1-1_Full64 -- Fri Apr 17 23:41:40 2020
+               Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Top Level Modules:
+       sYsTeMcToP
+TimeScale is 1 ps / 1 ps
+Starting vcs inline pass...
+1 unique modules to generate
+recompiling module sYsTeMcToP
+make[2]: Entering directory `/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs' \
+
+if [ -x /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr_elab \
+]; then chmod -x /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr_elab; \
+fi
+g++  -o /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr_elab \
+-Wl,-rpath,/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/gnu/linux/gcc-4.8.3_64-shared/lib64 \
+-rdynamic -L/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/cosim/sysc231-gcc4 \
+-L/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib -rdynamic -Wl,-E   -Wl,-whole-archive \
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvcsucli.so -Wl,-no-whole-archive \
+/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sysc/sysc_globals.o \
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/ucli_sysc.o   objs/ivVCS_d.o \
+amcQwB.o objs/amcQw_d.o    SIM_l.o      rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o     /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sysc/SysTop_rtl/SysTop_rtl.o \
+/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sysc/sysc_sim.o \
+/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sysc/libconcat_sim_rtl_v_vcs_sysc_stubs.a \
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libzerosoft_rt_stubs.so /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/liberrorinf.so \
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libsnpsmalloc.so -lsysctli \
+-lbfSim -lbfCbug -lsystemc231-gcc4-64 /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvirsim.so \
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvcsnew.so /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvcsucli.so \
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libsimprofile.so /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libuclinative.so \
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/vcs_save_restore_new.o -ldl \
+-lm  -lc -lpthread -ldl 
+/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr_elab \
+up to date
+make[2]: Leaving directory `/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs' \
+
+================================
+SETTING RANDOM SEED = 1587181304
+================================
+Weight Matrix 
+	82	-61	-121	100	45	-9	84	53	
+	56	-116	-28	-108	101	-103	-89	109	
+	18	68	-59	-1	-84	-18	-26	14	
+	-24	120	54	108	121	17	55	26	
+	-82	-29	6	102	-39	-76	120	-35	
+	93	44	99	46	-99	-3	-67	30	
+	118	-33	-28	48	-103	125	-90	113	
+	-79	-106	54	-16	4	-88	6	45	
+
+Input Matrix 
+	-56	-7	81	106	13	-4	67	-73	12	8	19	22	-26	-39	-123	105	19	-6	-116	80	76	77	-70	-125	
+	83	9	-124	125	-34	87	94	-79	34	-42	16	72	115	-20	-102	-12	-5	83	28	-23	40	95	0	-9	
+	-68	-47	-12	40	-81	-107	-124	55	-122	-2	91	-99	40	9	13	75	-49	-107	54	43	-46	47	73	-43	
+	-16	113	-70	-49	11	11	-38	-31	115	108	52	-113	87	92	36	111	4	97	-16	-95	9	20	2	-116	
+	108	32	-112	-90	110	-120	51	-89	-39	-11	57	-60	66	38	-50	-69	-85	-38	-118	36	-126	-117	-92	-20	
+	59	70	120	-74	-29	-1	-113	-21	-107	118	69	24	71	124	-42	105	74	-123	-70	124	24	79	54	-31	
+	0	-20	-14	13	-88	37	-14	-113	61	-2	79	-106	-9	14	32	-7	72	103	-22	116	-2	16	39	45	
+	-77	92	-89	106	-40	-53	104	25	-86	-21	-11	38	-8	-28	-43	-125	62	-117	-46	-125	109	-93	19	-122	
+
+Reference Output Matrix 
+	-2779	19870	-3355	-5347	9740	3320	18612	-22905	24946	11422	2768	-11715	-4136	6419	-3300	104	13035	18940	-28320	-3117	9981	-12729	-14716	-19405	
+	-12694	-4494	-5311	4537	23321	-29595	29796	12840	-19997	-21664	-18536	12900	-26030	-23284	-7567	-37602	-13273	-30533	-17292	-16881	-3207	-41699	-22434	-8354	
+	-2548	1006	170	18135	-4300	20540	14522	1242	12023	-4144	-12229	19142	-1795	-8865	-6431	-1124	7693	12842	7746	-12588	18523	11741	439	-849	
+	17973	17268	-39628	647	-641	-7934	5056	-24797	4205	6343	24123	-21132	34470	15706	-10820	1879	-6725	10736	-10542	-3024	-10650	-102	-1737	-16574	
+	-5856	-631	-13575	-10091	-10690	9336	-11561	-3923	29011	3522	6226	-29546	-859	4970	27281	1756	2862	34622	16284	-7858	-7715	-3013	9881	11227	
+	-22203	1012	6665	28505	-13907	1183	-4309	10949	-6661	3905	2399	4325	4220	-5296	-11342	25003	2109	-9317	7040	-9143	20494	24398	7712	-26216	
+	-20661	23267	28365	15739	-6103	3097	86	10502	-15336	21260	-3937	20582	-1824	7384	-17623	22751	22502	-29747	-16706	-8338	37843	15572	4655	-38468	
+	-16015	-6759	-7880	-7680	-1309	-17415	-6601	19546	-7224	-9401	-4980	-14186	-15766	-7721	22408	-19932	-7311	-9629	12854	-15737	-10595	-25444	5409	7791	
+
+Doing common elaboration 
+                         Chronologic VCS (TM)
+      Version L-2016.06-SP1-1_Full64 -- Fri Apr 17 23:41:46 2020
+               Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Top Level Modules:
+       sYsTeMcToP
+TimeScale is 1 ps / 1 ps
+Starting vcs inline pass...
+18 unique modules to generate
+recompiling module sYsTeMcToP
+recompiling module SysArray
+recompiling module SysPE
+recompiling module InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_297_32_8_5_0_0_0_0_0_1_1_32_8_1_gen
+recompiling module InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_298_32_8_5_0_0_0_0_0_1_1_32_8_1_gen
+recompiling module InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_299_32_8_5_0_0_0_0_0_1_1_32_8_1_gen
+recompiling module InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_300_32_8_5_0_0_0_0_0_1_1_32_8_1_gen
+recompiling module InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_301_32_8_5_0_0_0_0_0_1_1_32_8_1_gen
+recompiling module InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_302_32_8_5_0_0_0_0_0_1_1_32_8_1_gen
+recompiling module InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_303_32_8_5_0_0_0_0_0_1_1_32_8_1_gen
+recompiling module InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_304_32_8_5_0_0_0_0_0_1_1_32_8_1_gen
+recompiling module mgc_shift_l_v5
+recompiling module InputSetup_MemoryRun_req_inter_PopNB_mioi
+recompiling module InputSetup_MemoryRun_write_req_PopNB_mioi
+recompiling module InputSetup_MemoryRun_rsp_inter_Push_mioi
+recompiling module InputSetup_MemoryRun_wait_dp
+recompiling module InputSetup_ReadReqRun
+recompiling module InputSetup_ReadRspRun
+All of 18 modules done
+make[2]: Entering directory `/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs' \
+
+if [ -x /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr \
+]; then chmod -x /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr; \
+fi
+g++  -o /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr \
+-Wl,-rpath,/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/gnu/linux/gcc-4.8.3_64-shared/lib64 \
+-rdynamic -L/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/cosim/sysc231-gcc4 \
+-L/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib -rdynamic -Wl,-E   -Wl,-whole-archive \
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvcsucli.so -Wl,-no-whole-archive \
+/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sysc/sysc_globals.o \
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/ucli_sysc.o   objs/At9Kv_d.o \
+objs/hJ0PG_d.o objs/mF1iW_d.o objs/s1hrd_d.o objs/RuFWa_d.o objs/IhF1j_d.o objs/edmvU_d.o \
+objs/dyE6Q_d.o objs/S4YDe_d.o objs/ivVCS_d.o objs/rWsbc_d.o objs/Ig70K_d.o objs/tTGbr_d.o \
+amcQwB.o objs/amcQw_d.o objs/cZwCV_d.o objs/ymfnw_d.o objs/LpIbR_d.o objs/SkH4j_d.o \
+objs/hY86z_d.o    SIM_l.o      rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o \
+/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sysc/SysTop_rtl/SysTop_rtl.o \
+/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sysc/sysc_sim.o \
+/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sysc/libconcat_sim_rtl_v_vcs_sysc_stubs.a \
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libzerosoft_rt_stubs.so /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/liberrorinf.so \
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libsnpsmalloc.so -lsysctli \
+-lbfSim -lbfCbug -lsystemc231-gcc4-64 /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvirsim.so \
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvcsnew.so /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvcsucli.so \
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libsimprofile.so /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libreader_common.so \
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libBA.a /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libuclinative.so \
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/vcs_save_restore_new.o -ldl \
+-lm  -lc -lpthread -ldl 
+/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr \
+up to date
+make[2]: Leaving directory `/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs' \
+

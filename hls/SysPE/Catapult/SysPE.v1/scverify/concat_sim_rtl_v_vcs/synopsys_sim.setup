@@ -1,0 +1,3 @@
+WORK > DEFAULT
+DEFAULT : scverify/concat_sim_rtl_v_vcs/work
+work : ./scverify/concat_sim_rtl_v_vcs/work

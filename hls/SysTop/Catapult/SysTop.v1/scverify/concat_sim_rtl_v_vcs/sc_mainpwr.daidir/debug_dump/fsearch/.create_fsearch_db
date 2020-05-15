@@ -1,0 +1,9 @@
+#!/bin/sh -h 
+PYTHONHOME=/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/etc/search/pyh
+export PYTHONHOME
+PYTHONPATH=/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/pylib27
+export PYTHONPATH
+LD_LIBRARY_PATH=/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib:/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/pylib27
+export LD_LIBRARY_PATH
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/bin/vcsfind_create_index.exe  -z  "/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr.daidir/debug_dump/fsearch/./idents_azVMBe.xml.gz" "/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr.daidir/debug_dump/fsearch/./idents_tapi.xml.gz" -o "/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr.daidir/debug_dump/fsearch/fsearch.db_tmp"
+\mv "/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr.daidir/debug_dump/fsearch/fsearch.db_tmp" "/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr.daidir/debug_dump/fsearch/fsearch.db"

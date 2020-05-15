@@ -1,0 +1,5 @@
+VAR pure_vlog 2
+VAR pure_vhdl 0
+VAR mixed_hdl 0
+VAR vhdl_main 0
+VAR mxunielab_flow 1

@@ -1,0 +1,2 @@
+// Tab file required for DKI connect to function properly.
+acc=rw,cbk:SysTop_rtl+

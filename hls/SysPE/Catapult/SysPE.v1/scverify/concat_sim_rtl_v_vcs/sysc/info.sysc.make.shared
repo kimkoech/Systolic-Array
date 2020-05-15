@@ -1,0 +1,2 @@
+/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sysc/libconcat_sim_rtl_v_vcs_sysc.so:
+	$(ACTIVE) (cd /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1; $(VCS_HOME)/bin/syscan -shared -Mdir=scverify/concat_sim_rtl_v_vcs -full64  )

@@ -1,0 +1,7 @@
+time resolution 1000
+time resolution int 4
+time resolution specified 0
+time resolution fixed 0
+time resolution str 1 ps
+default time unit 1000
+default time unit specified 0

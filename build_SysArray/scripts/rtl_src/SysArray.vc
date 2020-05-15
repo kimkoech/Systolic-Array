@@ -1,0 +1,6 @@
+// When using -f switch, paths are relative to location of THIS file (may need to use -F otherwise)
+
++libext+.v+.sv
++define+DC
+
+../scripts/rtl_src/SysArray.v

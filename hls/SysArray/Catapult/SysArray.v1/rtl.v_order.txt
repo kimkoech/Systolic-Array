@@ -1,0 +1,10 @@
+/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/pkgs/siflibs/mgc_out_dreg_v2.v
+/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/pkgs/siflibs/ccs_in_v1.v
+../td_ccore_solutions/Connections__InBlocking_SysPE__InputType_Connections__SYN_--_134108c48ee88347694fbbe76a2ae1cc6142_0/rtl.v
+../td_ccore_solutions/Connections__InBlocking_SysPE__AccumType_Connections__SYN_--_825475bfda2a8d92d42aecf1ac6780716115_0/rtl.v
+/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/pkgs/siflibs/ccs_sync_out_vld_v1.v
+../td_ccore_solutions/Connections__OutBlocking_SysPE__InputType_Connections__SYN--_402b1caf9f8ccdd7cb3d4b7d690caecb5c96_0/rtl.v
+../td_ccore_solutions/Connections__OutBlocking_SysPE__AccumType_Connections__SYN--_e8bd1f99c97a28ffba001f7e6172d9185bea_0/rtl.v
+../td_ccore_solutions/Connections__Combinational_SysPE__InputType_Connections__S--_3a7d47f76e133e87373796c2bf8aa2f0618f_0/rtl.v
+../td_ccore_solutions/Connections__Combinational_SysPE__AccumType_Connections__S--_cf9160d9abd7b1b11f697cebc35a1c465d23_0/rtl.v
+./rtl.v

@@ -1,0 +1,89 @@
+{
+    "NameTable": {
+        "sYsTeMcToP": [
+            "sYsTeMcToP",
+            "ivVCS",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 91377
+    },
+    "CompileProcesses": [
+        "cgproc.43645.json"
+    ],
+    "MlibObjs": {},
+    "PrevCompiledModules": {},
+    "CurCompileUdps": {},
+    "CompileStrategy": "fullobj",
+    "stat": {
+        "totalObjSize": 105181,
+        "ru_self_end": {
+            "ru_minflt": 18789,
+            "ru_utime_sec": 0.121028,
+            "ru_nvcsw": 575,
+            "ru_maxrss_kb": 80236,
+            "ru_stime_sec": 0.13392399999999999,
+            "ru_majflt": 0,
+            "ru_nivcsw": 3
+        },
+        "ru_self_cgstart": {
+            "ru_minflt": 17704,
+            "ru_utime_sec": 0.112413,
+            "ru_nvcsw": 449,
+            "ru_maxrss_kb": 77280,
+            "ru_stime_sec": 0.10748199999999999,
+            "ru_majflt": 0,
+            "ru_nivcsw": 3
+        },
+        "ru_childs_cgstart": {
+            "ru_minflt": 2250,
+            "ru_utime_sec": 0.012126,
+            "ru_nvcsw": 22,
+            "ru_maxrss_kb": 24288,
+            "ru_stime_sec": 0.023092999999999999,
+            "ru_majflt": 0,
+            "ru_nivcsw": 8
+        },
+        "nMops": 0,
+        "ru_childs_end": {
+            "ru_minflt": 10627,
+            "ru_utime_sec": 0.062862000000000001,
+            "ru_nvcsw": 118,
+            "ru_maxrss_kb": 37904,
+            "ru_stime_sec": 0.10041,
+            "ru_majflt": 0,
+            "ru_nivcsw": 21
+        },
+        "nQuads": 0,
+        "Frontend(%)": 92.881812473146724,
+        "CodeGen(%)": 7.1181875268532879,
+        "peak_mem_kb": 300364
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "sYsTeMcToP",
+        "sYsTeMcToP"
+    ],
+    "LVLData": [
+        "SIM"
+    ],
+    "PEModules": [],
+    "Misc": {
+        "cwd": "/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1",
+        "archive_dir": "archive.0",
+        "daidir": "/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr_elab.daidir",
+        "csrc": "scverify/concat_sim_rtl_v_vcs",
+        "csrc_abs": "/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs",
+        "daidir_abs": "/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr_elab.daidir",
+        "default_output_dir": "scverify/concat_sim_rtl_v_vcs"
+    },
+    "CompileStatus": "Successful"
+}

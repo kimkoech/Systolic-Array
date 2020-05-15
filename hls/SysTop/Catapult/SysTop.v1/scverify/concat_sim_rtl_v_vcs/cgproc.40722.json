@@ -1,0 +1,214 @@
+{
+    "ObjArchives": [],
+    "Modules": {
+        "mgc_shift_l_v5_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "SysArray": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_302_32_8_5_0_0_0_0_0_1_1_32_8_1_gen": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "InputSetup_MemoryRun_rsp_inter_Push_mioi": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "...MASTER...": {},
+        "sYsTeMcToP": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        },
+        "InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_299_32_8_5_0_0_0_0_0_1_1_32_8_1_gen": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_303_32_8_5_0_0_0_0_0_1_1_32_8_1_gen": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "SysPE": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "InputSetup_MemoryRun_write_req_PopNB_mioi": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "InputSetup_MemoryRun_wait_dp": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_298_32_8_5_0_0_0_0_0_1_1_32_8_1_gen": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_297_32_8_5_0_0_0_0_0_1_1_32_8_1_gen": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_300_32_8_5_0_0_0_0_0_1_1_32_8_1_gen": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_301_32_8_5_0_0_0_0_0_1_1_32_8_1_gen": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "InputSetup_MemoryRun_req_inter_PopNB_mioi": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_304_32_8_5_0_0_0_0_0_1_1_32_8_1_gen": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "InputSetup_ReadReqRun": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "InputSetup_ReadRspRun": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "bytes": 7762,
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "mode": 4,
+            "checksum": 0
+        },
+        "dyE6Q_d": {
+            "bytes": 135671,
+            "mod": "SysPE",
+            "out": "objs/dyE6Q_d.o",
+            "mode": 4,
+            "checksum": 0
+        },
+        "ivVCS_d": {
+            "bytes": 1245628,
+            "mod": "sYsTeMcToP",
+            "out": "objs/ivVCS_d.o",
+            "mode": 4,
+            "checksum": 0
+        },
+        "ymfnw_d": {
+            "bytes": 8604,
+            "mod": "InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_297_32_8_5_0_0_0_0_0_1_1_32_8_1_gen",
+            "out": "objs/ymfnw_d.o",
+            "mode": 4,
+            "checksum": 0
+        },
+        "At9Kv_d": {
+            "bytes": 177383,
+            "mod": "SysArray",
+            "out": "objs/At9Kv_d.o",
+            "mode": 4,
+            "checksum": 0
+        },
+        "mF1iW_d": {
+            "bytes": 8604,
+            "mod": "InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_300_32_8_5_0_0_0_0_0_1_1_32_8_1_gen",
+            "out": "objs/mF1iW_d.o",
+            "mode": 4,
+            "checksum": 0
+        },
+        "cZwCV_d": {
+            "bytes": 61776,
+            "mod": "InputSetup_MemoryRun_rsp_inter_Push_mioi",
+            "out": "objs/cZwCV_d.o",
+            "mode": 4,
+            "checksum": 0
+        },
+        "hY86z_d": {
+            "bytes": 8604,
+            "mod": "InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_298_32_8_5_0_0_0_0_0_1_1_32_8_1_gen",
+            "out": "objs/hY86z_d.o",
+            "mode": 4,
+            "checksum": 0
+        },
+        "IhF1j_d": {
+            "bytes": 220921,
+            "mod": "InputSetup_ReadRspRun",
+            "out": "objs/IhF1j_d.o",
+            "mode": 4,
+            "checksum": 0
+        },
+        "tTGbr_d": {
+            "bytes": 8604,
+            "mod": "InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_299_32_8_5_0_0_0_0_0_1_1_32_8_1_gen",
+            "out": "objs/tTGbr_d.o",
+            "mode": 4,
+            "checksum": 0
+        },
+        "Ig70K_d": {
+            "bytes": 212225,
+            "mod": "InputSetup_ReadReqRun",
+            "out": "objs/Ig70K_d.o",
+            "mode": 4,
+            "checksum": 0
+        },
+        "SkH4j_d": {
+            "bytes": 8604,
+            "mod": "InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_301_32_8_5_0_0_0_0_0_1_1_32_8_1_gen",
+            "out": "objs/SkH4j_d.o",
+            "mode": 4,
+            "checksum": 0
+        },
+        "rWsbc_d": {
+            "bytes": 31071,
+            "mod": "InputSetup_MemoryRun_wait_dp",
+            "out": "objs/rWsbc_d.o",
+            "mode": 4,
+            "checksum": 0
+        },
+        "hJ0PG_d": {
+            "bytes": 8604,
+            "mod": "InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_302_32_8_5_0_0_0_0_0_1_1_32_8_1_gen",
+            "out": "objs/hJ0PG_d.o",
+            "mode": 4,
+            "checksum": 0
+        },
+        "s1hrd_d": {
+            "bytes": 8604,
+            "mod": "InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_303_32_8_5_0_0_0_0_0_1_1_32_8_1_gen",
+            "out": "objs/s1hrd_d.o",
+            "mode": 4,
+            "checksum": 0
+        },
+        "S4YDe_d": {
+            "bytes": 8604,
+            "mod": "InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_304_32_8_5_0_0_0_0_0_1_1_32_8_1_gen",
+            "out": "objs/S4YDe_d.o",
+            "mode": 4,
+            "checksum": 0
+        },
+        "edmvU_d": {
+            "bytes": 12782,
+            "mod": "mgc_shift_l_v5_0000",
+            "out": "objs/edmvU_d.o",
+            "mode": 4,
+            "checksum": 0
+        },
+        "LpIbR_d": {
+            "bytes": 44424,
+            "mod": "InputSetup_MemoryRun_req_inter_PopNB_mioi",
+            "out": "objs/LpIbR_d.o",
+            "mode": 4,
+            "checksum": 0
+        },
+        "RuFWa_d": {
+            "bytes": 29272,
+            "mod": "InputSetup_MemoryRun_write_req_PopNB_mioi",
+            "out": "objs/RuFWa_d.o",
+            "mode": 4,
+            "checksum": 0
+        }
+    },
+    "reusePaths": {}
+}

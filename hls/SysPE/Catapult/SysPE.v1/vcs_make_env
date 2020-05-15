@@ -1,0 +1,8 @@
+export TK_LIBRARY:=/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/etc/auxx/tcllib/tk8.4/library
+export LD_LIBRARY_PATH:=/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/gnu/linux/gcc-4.8.3_64-shared/lib64:/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/gnu/linux/gcc-4.8.3_64-shared/lib:/lib:/usr/lib:.:/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux/lib:/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux/lib:/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/lib:/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/shared/lib::/cad/tools/accellera/systemc-2.3.1/lib-linux64
+export PATH:=/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/gnu/linux/gcc-4.8.3_64-shared/bin:/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/gnu/linux/binutils-2.22_64/bin:/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin:/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/bin:/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/lib:/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/pkgs/sif/.lib:/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin:/cad/tools/synopsys/verdi/O-2018.09-SP2-7/bin:/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+export VCS_HOME:=/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1
+export VCSMX_HOME:=/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1
+export MANPATH:=/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/gnu/linux/gcc-4.8.3_64-shared/man:/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/gnu/linux/binutils-2.22_64/man:/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/doc/man:/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/doc/snps_tcl/man
+export ARCH:=linux
+export VG_GNU_PACKAGE:=/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/gnu/linux

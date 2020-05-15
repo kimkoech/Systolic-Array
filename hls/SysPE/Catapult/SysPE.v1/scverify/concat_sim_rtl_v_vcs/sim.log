@@ -1,0 +1,78 @@
+Command: ./Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr -systemcrun -verilogrun -cm assert -ucli -ucli2Proc -i ./Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/scverify_vcs_wave.tcl -l ./Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sim.log
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06-SP1-1_Full64; Runtime version L-2016.06-SP1-1_Full64;  Apr 17 21:43 2020
+*Novas* Loading libsscore_vcs201209.so
+*Novas* WARNING: Not support SystemC version for VCS 2016.6 SC 2.3. Disable SystemC dumping support.
+GCC=GNU C++ 4.8.3 -m64 -mtune=generic -march=x86-64 -g -O -fPIC
+ucli% # Source static function file
+ucli% global env
+ucli% # Source the common TCL file (that also reads the wave database file)
+ucli% source $env(MGC_HOME)/pkgs/sif/userware/En_na/flows/vcs_funcs.tcl
+ucli% read_ccs_wave ./Catapult/SysPE.v1/scverify/ccs_wave_signals.dat
+Reading SCVerify waveform database './Catapult/SysPE.v1/scverify/ccs_wave_signals.dat'
+ucli% setup_vcd_file ./Catapult/SysPE.v1/.dut_inst_info.tcl
+DUT Instance Path = my_testbench.PE.ccs_rtl
+Preparing to write FSDB file ./default.fsdb...
+ucli% populate_wave_window
+ucli% if { ("0" != {}) && [file exists "0"] } {
+   source "0"
+}
+ucli% # If not running in GUI mode, run the entire simulation
+ucli% if { ![gui_is_active] } {
+   do_simulation_run
+}
+Running up to VCD start time: '0 ns'
+run 0 ns
+top.v, 35 : (*vcs_systemc_2,vcs_systemc_skel*) module sYsTeMcToP;
+Turning FSDB on
+Novas FSDB Dumper for VCS, Release 2012.10, Linux x86_64/64bit, 10/18/2012
+Copyright (C) 1996 - 2012 by SpringSoft, Inc.
+***********************************************************************
+*  WARNING -                                                          *
+*  The simulator version is newer than the FSDB dumper version which  *
+*  may cause abnormal behavior. Please contact SpringSoft support at  *
+*  support@springsoft.com for assistance.                             *
+***********************************************************************
+*Novas* : Create FSDB file './default.fsdb'
+*Novas* : Begin traversing the scopes, layer (0).
+*Novas* : End of traversing.
+fsdbDumpvars 0 my_testbench.PE.ccs_rtl
+*Novas* ERROR: The #2 argument is invalid
+*Novas* ERROR: Syntax - fsdbDumpvars [depth] [instance] [option]*
+*Novas* : fsdbDumpon - All FSDB files at 0 ps.
+Continuing to VCD end time: 'end'
+run -all
+@10500 ps Asserting Reset 
+@11500 ps Deasserting Reset 
+33 ns: Received Output Weight: 	 10
+34 ns: Received Output Activation: 	 0	| Reference 	0
+34 ns: Received Accumulated Output:	 0	| Reference 	0
+35 ns: Received Output Activation: 	 -1	| Reference 	-1
+35 ns: Received Accumulated Output:	 -20	| Reference 	-20
+36 ns: Received Output Activation: 	 3	| Reference 	3
+36 ns: Received Accumulated Output:	 60	| Reference 	60
+37 ns: Received Output Activation: 	 -7	| Reference 	-7
+37 ns: Received Accumulated Output:	 -140	| Reference 	-140
+38 ns: Received Output Activation: 	 15	| Reference 	15
+38 ns: Received Accumulated Output:	 300	| Reference 	300
+39 ns: Received Output Activation: 	 -31	| Reference 	-31
+39 ns: Received Accumulated Output:	 -620	| Reference 	-620
+40 ns: Received Output Activation: 	 63	| Reference 	63
+40 ns: Received Accumulated Output:	 1260	| Reference 	1260
+41 ns: Received Output Activation: 	 -127	| Reference 	-127
+41 ns: Received Accumulated Output:	 -2540	| Reference 	-2540
+Implementation Correct :)
+@10011500 ps Stop 
+
+Info: SystemC: Simulation stopped by user.
+Simulation complete, time is 10011500 ps.
+top.v, 35 : (*vcs_systemc_2,vcs_systemc_skel*) module sYsTeMcToP;
+Turning FSDB off and flushing
+*Novas* : fsdbDumpoff - All FSDB files at 10,011,500 ps.
+*Novas* : Close all FSDB Files at 10,011,500 ps.
+Completed writing FSDB file ./default.fsdb...
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 10011500 ps
+CPU Time:      0.360 seconds;       Data structure size:   0.0Mb
+Fri Apr 17 21:43:05 2020

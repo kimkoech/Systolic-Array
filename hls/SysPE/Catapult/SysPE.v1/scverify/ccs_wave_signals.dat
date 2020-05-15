@@ -1,0 +1,5 @@
+RADIX hex
+CDEBUG 0
+DEBUGVARS {}
+WAVELIST {{DUT {} weight_in_val {scverify_top rtl weight_in_val} {}} {DUT {} weight_in_rdy {scverify_top rtl weight_in_rdy} {}} {DUT {} weight_in_msg {scverify_top rtl weight_in_msg} {}} {DUT {} act_in_val {scverify_top rtl act_in_val} {}} {DUT {} act_in_rdy {scverify_top rtl act_in_rdy} {}} {DUT {} act_in_msg {scverify_top rtl act_in_msg} {}} {DUT {} accum_in_val {scverify_top rtl accum_in_val} {}} {DUT {} accum_in_rdy {scverify_top rtl accum_in_rdy} {}} {DUT {} accum_in_msg {scverify_top rtl accum_in_msg} {}} {DUT {} act_out_val {scverify_top rtl act_out_val} {}} {DUT {} act_out_rdy {scverify_top rtl act_out_rdy} {}} {DUT {} act_out_msg {scverify_top rtl act_out_msg} {}} {DUT {} accum_out_val {scverify_top rtl accum_out_val} {}} {DUT {} accum_out_rdy {scverify_top rtl accum_out_rdy} {}} {DUT {} accum_out_msg {scverify_top rtl accum_out_msg} {}} {DUT {} weight_out_val {scverify_top rtl weight_out_val} {}} {DUT {} weight_out_rdy {scverify_top rtl weight_out_rdy} {}} {DUT {} weight_out_msg {scverify_top rtl weight_out_msg} {}}}
+DUTINST SysPE_rtl

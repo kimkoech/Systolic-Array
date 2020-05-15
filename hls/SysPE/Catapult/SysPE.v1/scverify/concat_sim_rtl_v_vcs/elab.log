@@ -1,0 +1,91 @@
+Command: vcs -full64 +libverbose -lca -psl -cm assert -debug -assert enable_diag -Mdir=scverify/concat_sim_rtl_v_vcs -debug_all -timescale=1ps/1ps -sysc=blocksync -load libnovas.so:FSDBDumpCmd +vcsd +memcbk -sysc=231 sc_main -o scverify/concat_sim_rtl_v_vcs/sc_mainpwr -LDFLAGS  -l scverify/concat_sim_rtl_v_vcs/elab.log
+Doing common elaboration 
+                         Chronologic VCS (TM)
+      Version L-2016.06-SP1-1_Full64 -- Fri Apr 17 21:42:51 2020
+               Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Top Level Modules:
+       sYsTeMcToP
+TimeScale is 1 ps / 1 ps
+Starting vcs inline pass...
+1 unique modules to generate
+recompiling module sYsTeMcToP
+make[2]: Entering directory `/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs' \
+
+if [ -x /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr_elab \
+]; then chmod -x /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr_elab; \
+fi
+g++  -o /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr_elab \
+-Wl,-rpath,/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/gnu/linux/gcc-4.8.3_64-shared/lib64 \
+-rdynamic -L/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/cosim/sysc231-gcc4 \
+-L/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib -rdynamic -Wl,-E   -Wl,-whole-archive \
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvcsucli.so -Wl,-no-whole-archive \
+/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sysc/sysc_globals.o \
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/ucli_sysc.o   objs/ivVCS_d.o \
+amcQwB.o objs/amcQw_d.o    SIM_l.o      rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o     /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sysc/SysPE_rtl/SysPE_rtl.o \
+/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sysc/sysc_sim.o \
+/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sysc/libconcat_sim_rtl_v_vcs_sysc_stubs.a \
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libzerosoft_rt_stubs.so /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/liberrorinf.so \
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libsnpsmalloc.so -lsysctli \
+-lbfSim -lbfCbug -lsystemc231-gcc4-64 /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvirsim.so \
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvcsnew.so /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvcsucli.so \
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libsimprofile.so /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libuclinative.so \
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/vcs_save_restore_new.o -ldl \
+-lm  -lc -lpthread -ldl 
+/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr_elab \
+up to date
+make[2]: Leaving directory `/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs' \
+
+================================
+SETTING RANDOM SEED = 1587174176
+================================
+Doing common elaboration 
+                         Chronologic VCS (TM)
+      Version L-2016.06-SP1-1_Full64 -- Fri Apr 17 21:43:00 2020
+               Copyright (c) 1991-2016 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Top Level Modules:
+       sYsTeMcToP
+TimeScale is 1 ps / 1 ps
+Starting vcs inline pass...
+1 unique modules to generate
+recompiling module sYsTeMcToP
+make[2]: Entering directory `/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs' \
+
+if [ -x /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr \
+]; then chmod -x /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr; \
+fi
+g++  -o /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr \
+-Wl,-rpath,/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/gnu/linux/gcc-4.8.3_64-shared/lib64 \
+-rdynamic -L/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/cosim/sysc231-gcc4 \
+-L/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib -rdynamic -Wl,-E   -Wl,-whole-archive \
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvcsucli.so -Wl,-no-whole-archive \
+/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sysc/sysc_globals.o \
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/ucli_sysc.o   objs/ivVCS_d.o \
+amcQwB.o objs/amcQw_d.o    SIM_l.o      rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o     /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sysc/SysPE_rtl/SysPE_rtl.o \
+/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sysc/sysc_sim.o \
+/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sysc/libconcat_sim_rtl_v_vcs_sysc_stubs.a \
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libzerosoft_rt_stubs.so /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/liberrorinf.so \
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libsnpsmalloc.so -lsysctli \
+-lbfSim -lbfCbug -lsystemc231-gcc4-64 /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvirsim.so \
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvcsnew.so /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvcsucli.so \
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libsimprofile.so /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libreader_common.so \
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libBA.a /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libuclinative.so \
+/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/vcs_save_restore_new.o -ldl \
+-lm  -lc -lpthread -ldl 
+/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr \
+up to date
+make[2]: Leaving directory `/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs' \
+

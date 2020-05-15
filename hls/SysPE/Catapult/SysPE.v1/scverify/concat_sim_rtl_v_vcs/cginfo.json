@@ -1,0 +1,112 @@
+{
+    "NameTable": {
+        "sYsTeMcToP": [
+            "sYsTeMcToP",
+            "ivVCS",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "CompileStatus": "Successful",
+    "MlibObjs": {},
+    "PrevCompiledModules": {
+        "sYsTeMcToP": {
+            "ivVCS_d": {
+                "bytes": 6281,
+                "mode": 4,
+                "mod": "sYsTeMcToP",
+                "out": "objs/ivVCS_d.o",
+                "checksum": 0
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "bytes": 7523,
+                "mode": 4,
+                "mod": "...MASTER...",
+                "out": "objs/amcQw_d.o",
+                "checksum": 0
+            }
+        }
+    },
+    "CompileStrategy": "fullobj",
+    "stat": {
+        "CodeGen(%)": 32.040708341998503,
+        "totalObjSize": 258843,
+        "ru_self_cgstart": {
+            "ru_minflt": 20134,
+            "ru_stime_sec": 0.085375000000000006,
+            "ru_utime_sec": 0.25815900000000003,
+            "ru_nvcsw": 445,
+            "ru_maxrss_kb": 86952,
+            "ru_majflt": 0,
+            "ru_nivcsw": 4
+        },
+        "ru_childs_cgstart": {
+            "ru_minflt": 2843,
+            "ru_stime_sec": 0.028801,
+            "ru_utime_sec": 0.016781999999999998,
+            "ru_nvcsw": 26,
+            "ru_maxrss_kb": 41220,
+            "ru_majflt": 0,
+            "ru_nivcsw": 10
+        },
+        "quadSpeed": 35353.369374106514,
+        "nQuads": 4303,
+        "mop/quad": 2.1710434580525213,
+        "nMops": 9342,
+        "peak_mem_kb": 305672,
+        "ru_self_end": {
+            "ru_minflt": 23947,
+            "ru_stime_sec": 0.11587600000000001,
+            "ru_utime_sec": 0.37987300000000002,
+            "ru_nvcsw": 598,
+            "ru_maxrss_kb": 91444,
+            "ru_majflt": 0,
+            "ru_nivcsw": 5
+        },
+        "ru_childs_end": {
+            "ru_minflt": 11836,
+            "ru_stime_sec": 0.101782,
+            "ru_utime_sec": 0.057091000000000003,
+            "ru_nvcsw": 98,
+            "ru_maxrss_kb": 42160,
+            "ru_majflt": 0,
+            "ru_nivcsw": 26
+        },
+        "mopSpeed": 76753.70129976832,
+        "Frontend(%)": 67.95929165800149,
+        "outputSizePerQuad": 60.0
+    },
+    "CurCompileUdps": {},
+    "Misc": {
+        "cwd": "/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1",
+        "csrc": "scverify/concat_sim_rtl_v_vcs",
+        "daidir_abs": "/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr.daidir",
+        "csrc_abs": "/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs",
+        "daidir": "/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr.daidir",
+        "default_output_dir": "scverify/concat_sim_rtl_v_vcs",
+        "archive_dir": "archive.1"
+    },
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 92391
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "sYsTeMcToP",
+        "sYsTeMcToP"
+    ],
+    "LVLData": [
+        "SIM"
+    ],
+    "PEModules": [],
+    "CompileProcesses": [
+        "cgproc.46105.json"
+    ]
+}

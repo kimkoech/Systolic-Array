@@ -1,0 +1,82 @@
+.NAME
+ SysTop_rtl
+
+.SHORT_DESCRIPTION
+ SystemC-Verilog co-simulation
+
+.DESCRIPTION
+ vcs (TM) Simulator Interface
+
+.IMPLEMENTATIONS
+ 1  vcs  Verilog Import SysTop_rtl(SysTop_rtl)
+
+.CLASSES
+ 1 None
+
+
+.INPUT_PORTS
+ 1   clk   (BIT)   bool   (clk) BC
+ 2   rst   (BIT)   sc_logic   (rst) BC
+ 3   write_req_val   (BIT)   sc_logic   (write_req_val) BC
+ 4   write_req_msg   (B(68 downto 0))   sc_lv   (write_req_msg) BC
+ 5   start_val   (BIT)   sc_logic   (start_val) BC
+ 6   start_msg   (B(5 downto 0))   sc_lv   (start_msg) BC
+ 7   weight_in_vec_0_val   (BIT)   sc_logic   (weight_in_vec_0_val) BC
+ 8   weight_in_vec_1_val   (BIT)   sc_logic   (weight_in_vec_1_val) BC
+ 9   weight_in_vec_2_val   (BIT)   sc_logic   (weight_in_vec_2_val) BC
+ 10   weight_in_vec_3_val   (BIT)   sc_logic   (weight_in_vec_3_val) BC
+ 11   weight_in_vec_4_val   (BIT)   sc_logic   (weight_in_vec_4_val) BC
+ 12   weight_in_vec_5_val   (BIT)   sc_logic   (weight_in_vec_5_val) BC
+ 13   weight_in_vec_6_val   (BIT)   sc_logic   (weight_in_vec_6_val) BC
+ 14   weight_in_vec_7_val   (BIT)   sc_logic   (weight_in_vec_7_val) BC
+ 15   weight_in_vec_0_msg   (B(7 downto 0))   sc_lv   (weight_in_vec_0_msg) BC
+ 16   weight_in_vec_1_msg   (B(7 downto 0))   sc_lv   (weight_in_vec_1_msg) BC
+ 17   weight_in_vec_2_msg   (B(7 downto 0))   sc_lv   (weight_in_vec_2_msg) BC
+ 18   weight_in_vec_3_msg   (B(7 downto 0))   sc_lv   (weight_in_vec_3_msg) BC
+ 19   weight_in_vec_4_msg   (B(7 downto 0))   sc_lv   (weight_in_vec_4_msg) BC
+ 20   weight_in_vec_5_msg   (B(7 downto 0))   sc_lv   (weight_in_vec_5_msg) BC
+ 21   weight_in_vec_6_msg   (B(7 downto 0))   sc_lv   (weight_in_vec_6_msg) BC
+ 22   weight_in_vec_7_msg   (B(7 downto 0))   sc_lv   (weight_in_vec_7_msg) BC
+ 23   accum_out_vec_0_rdy   (BIT)   sc_logic   (accum_out_vec_0_rdy) BC
+ 24   accum_out_vec_1_rdy   (BIT)   sc_logic   (accum_out_vec_1_rdy) BC
+ 25   accum_out_vec_2_rdy   (BIT)   sc_logic   (accum_out_vec_2_rdy) BC
+ 26   accum_out_vec_3_rdy   (BIT)   sc_logic   (accum_out_vec_3_rdy) BC
+ 27   accum_out_vec_4_rdy   (BIT)   sc_logic   (accum_out_vec_4_rdy) BC
+ 28   accum_out_vec_5_rdy   (BIT)   sc_logic   (accum_out_vec_5_rdy) BC
+ 29   accum_out_vec_6_rdy   (BIT)   sc_logic   (accum_out_vec_6_rdy) BC
+ 30   accum_out_vec_7_rdy   (BIT)   sc_logic   (accum_out_vec_7_rdy) BC
+
+.OUTPUT_PORTS
+ 1   write_req_rdy   (BIT)   sc_logic   (write_req_rdy) BC
+ 2   start_rdy   (BIT)   sc_logic   (start_rdy) BC
+ 3   weight_in_vec_0_rdy   (BIT)   sc_logic   (weight_in_vec_0_rdy) BC
+ 4   weight_in_vec_1_rdy   (BIT)   sc_logic   (weight_in_vec_1_rdy) BC
+ 5   weight_in_vec_2_rdy   (BIT)   sc_logic   (weight_in_vec_2_rdy) BC
+ 6   weight_in_vec_3_rdy   (BIT)   sc_logic   (weight_in_vec_3_rdy) BC
+ 7   weight_in_vec_4_rdy   (BIT)   sc_logic   (weight_in_vec_4_rdy) BC
+ 8   weight_in_vec_5_rdy   (BIT)   sc_logic   (weight_in_vec_5_rdy) BC
+ 9   weight_in_vec_6_rdy   (BIT)   sc_logic   (weight_in_vec_6_rdy) BC
+ 10   weight_in_vec_7_rdy   (BIT)   sc_logic   (weight_in_vec_7_rdy) BC
+ 11   accum_out_vec_0_val   (BIT)   sc_logic   (accum_out_vec_0_val) BC
+ 12   accum_out_vec_1_val   (BIT)   sc_logic   (accum_out_vec_1_val) BC
+ 13   accum_out_vec_2_val   (BIT)   sc_logic   (accum_out_vec_2_val) BC
+ 14   accum_out_vec_3_val   (BIT)   sc_logic   (accum_out_vec_3_val) BC
+ 15   accum_out_vec_4_val   (BIT)   sc_logic   (accum_out_vec_4_val) BC
+ 16   accum_out_vec_5_val   (BIT)   sc_logic   (accum_out_vec_5_val) BC
+ 17   accum_out_vec_6_val   (BIT)   sc_logic   (accum_out_vec_6_val) BC
+ 18   accum_out_vec_7_val   (BIT)   sc_logic   (accum_out_vec_7_val) BC
+ 19   accum_out_vec_0_msg   (B(31 downto 0))   sc_lv   (accum_out_vec_0_msg) BC
+ 20   accum_out_vec_1_msg   (B(31 downto 0))   sc_lv   (accum_out_vec_1_msg) BC
+ 21   accum_out_vec_2_msg   (B(31 downto 0))   sc_lv   (accum_out_vec_2_msg) BC
+ 22   accum_out_vec_3_msg   (B(31 downto 0))   sc_lv   (accum_out_vec_3_msg) BC
+ 23   accum_out_vec_4_msg   (B(31 downto 0))   sc_lv   (accum_out_vec_4_msg) BC
+ 24   accum_out_vec_5_msg   (B(31 downto 0))   sc_lv   (accum_out_vec_5_msg) BC
+ 25   accum_out_vec_6_msg   (B(31 downto 0))   sc_lv   (accum_out_vec_6_msg) BC
+ 26   accum_out_vec_7_msg   (B(31 downto 0))   sc_lv   (accum_out_vec_7_msg) BC
+
+.PARAMETERS
+
+.HISTORY
+ None
+
+.END

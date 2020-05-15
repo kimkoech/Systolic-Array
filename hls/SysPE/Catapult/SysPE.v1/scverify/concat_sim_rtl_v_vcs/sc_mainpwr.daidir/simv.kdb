@@ -1,0 +1,16 @@
+rc file Version 1.0
+
+[Design]
+COMPILE_PATH=/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1
+SystemC=TRUE
+UUM=TRUE
+KDB=FALSE
+USE_NOVAS_HOME=FALSE
+COSIM=FALSE
+ENV="SYNOPSYS_SIM_SETUP=/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/synopsys_sim.setup" 
+TOP=
+OPTION=-ssz -ssv -ssy -ssz -ssv -ssy 
+
+[Value]
+WREALX=ffff534e50535f58
+WREALZ=ffff534e50535f5a

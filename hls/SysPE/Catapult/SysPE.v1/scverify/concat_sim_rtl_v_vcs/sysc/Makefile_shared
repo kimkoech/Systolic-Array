@@ -1,0 +1,14 @@
+CXX = g++
+CXXFLAGS = -MMD -m64 -fPIC
+include modellist
+libconcat_sim_rtl_v_vcs_sysc.so:
+	$(CXX) -o $@ -shared $(addsuffix .o,$(MODELS)) $(CXXFLAGS)
+include stublist
+stubs:	libconcat_sim_rtl_v_vcs_sysc_stubs.a
+libconcat_sim_rtl_v_vcs_sysc_stubs.a:	$(addsuffix .o,$(STUBS))
+	@ar cr $@ $(addsuffix .o,$(STUBS))
+_stublist.o:	_stublist.cpp
+	@$(CXX) -c -o $@ _stublist.cpp $(CXXFLAGS)
+clean:
+	@rm -f libconcat_sim_rtl_v_vcs_sysc.so
+	@rm -f libconcat_sim_rtl_v_vcs_sysc_stubs.a

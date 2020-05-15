@@ -1,0 +1,717 @@
+//  Catapult Ultra Synthesis 10.4b/841621 (Production Release) Thu Oct 24 17:20:07 PDT 2019
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2019, All Rights Reserved.
+//                        UNPUBLISHED, LICENSED SOFTWARE.
+//             CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//                 PROPERTY OF MENTOR GRAPHICS OR ITS LICENSORS
+//  
+//  Running on Linux billyk@cad.eecs.harvard.edu 3.10.0-1062.12.1.el7.x86_64 x86_64 aol
+//  
+//  Package information: SIFLIBS v23.4_2.0, HLS_PKGS v23.4_2.0, 
+//                       SIF_TOOLKITS v23.4_2.0, SIF_XILINX v23.4_2.0, 
+//                       SIF_ALTERA v23.4_2.0, CCS_LIBS v23.4_2.0, 
+//                       CDS_PPRO v10.3a_3, CDS_DesigChecker v10.4b, 
+//                       CDS_OASYS v19.1_2.4, CDS_PSR v19.1_1.16, 
+//                       DesignPad v2.78_1.0
+//  
+//  Start time Fri Apr 17 23:41:05 2020
+# -------------------------------------------------
+# Logging session transcript to file "/tmp/log33647182cd0cf.0"
+dofile ./go_vcs.tcl
+# > source Catapult.ccs
+# Moving session transcript to file "/home/billyk/cs148/hls/lab3/SysTop/catapult.log"
+# Warning: Could not read Encrypted Liberty technology library file 'sample_065nm.clib' specified in a catapult library, in the paths specified () (LIB-147)
+# Warning: Downstream flows that depend on a Encrypted Liberty file(s) will not be able to run. Please check option ComponentLibs/TechLibSearchPath. (LIB-191)
+# Warning: Could not read Liberty technology library file 'sample_065nm.lib' specified in a catapult library, in the paths specified () (LIB-147)
+# Warning: Downstream flows that depend on a Liberty file(s) will not be able to run. Please check option ComponentLibs/TechLibSearchPath. (LIB-191)
+# Warning: No LEF technology libraries have been specified (LIB-192)
+# Warning: No Process Technology File (PTF) technology libraries have been specified (LIB-192)
+# Warning: Could not read Synopsys DB technology library file 'sample_065nm.db' specified in a catapult library, in the paths specified () (LIB-147)
+# Warning: Downstream flows that depend on a Synopsys DB file(s) will not be able to run. Please check option ComponentLibs/TechLibSearchPath. (LIB-191)
+# Reading solution library '/home/billyk/cs148/hls/lab3/SysTop/Catapult/td_ccore_solutions/Connections__Combinational_SysPE__AccumType_Connections__S--_b0d5d3774c22fe956cb710fa19a5f9a25d23_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/billyk/cs148/hls/lab3/SysTop/Catapult/td_ccore_solutions/Connections__Combinational_SysPE__InputType_Connections__S--_a09193665729a5197eabe9f28a1efa99618f_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/billyk/cs148/hls/lab3/SysTop/Catapult/td_ccore_solutions/Connections__OutBlocking_SysPE__AccumType_Connections__SYN--_de4c7379377cdb6e2c90db418c7269105beb_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/billyk/cs148/hls/lab3/SysTop/Catapult/td_ccore_solutions/Connections__OutBlocking_SysPE__InputType_Connections__SYN--_0915a3f7c0fd3ff66acab9cdc0d4268d5eed_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/billyk/cs148/hls/lab3/SysTop/Catapult/td_ccore_solutions/Connections__InBlocking_SysPE__AccumType_Connections__SYN_--_4a7ec6e3fe4ffbb969ad629169aa89296115_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/billyk/cs148/hls/lab3/SysTop/Catapult/td_ccore_solutions/Connections__OutBlocking_SysPE__InputType_Connections__SYN--_5dae02d221f0ccc24d0c32e5e6e169c96300_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/billyk/cs148/hls/lab3/SysTop/Catapult/td_ccore_solutions/Connections__InBlocking_SysPE__InputType_Connections__SYN_--_e193af7db87ccc7c76c47c5f56a822956142_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/billyk/cs148/hls/lab3/SysTop/Catapult/td_ccore_solutions/Connections__Combinational_ArbitratedScratchpad_InputSetup--_a25023c05ca59912d81479e03633279876b3_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/billyk/cs148/hls/lab3/SysTop/Catapult/td_ccore_solutions/Connections__Combinational_ArbitratedScratchpad_InputSetup--_694dcb83f2aefc5cd19d731ef7b159598485_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/billyk/cs148/hls/lab3/SysTop/Catapult/td_ccore_solutions/Connections__InBlocking_InputSetup__StartType_Connections_--_5b702d3f41a65f0c5ddd48c1b46b684e599a_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/billyk/cs148/hls/lab3/SysTop/Catapult/td_ccore_solutions/Connections__Combinational_ArbitratedScratchpad_InputSetup--_6d01a7417bfbe5463c65573f0d893d1a73e5_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/billyk/cs148/hls/lab3/SysTop/Catapult/td_ccore_solutions/Connections__InBlocking_InputSetup__WriteReq_Connections__--_749f9cf99c5bf2b4f3e6a99e1ab903e16fa4_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/billyk/cs148/hls/lab3/SysTop/Catapult/td_ccore_solutions/Connections__Combinational_ArbitratedScratchpad_InputSetup--_31ec8cab963b6f5e97b0c13f1550d1c18e15_0/solIndex.xml' ... (LIB-129)
+# > echo "***RUN VCS ON CONCAT SIM ONLY***"
+# ***RUN VCS ON CONCAT SIM ONLY***
+# > flow run /SCVerify/launch_make ./scverify/Verify_concat_sim_rtl_v_vcs.mk SIMTOOL=vcs sim INVOKE_ARGS= CCS_VCD_FILE=./default.fsdb CCS_VCD_TIMES=0,ns,end,ns USE_FSDB=true
+# Making './scverify/Verify_concat_sim_rtl_v_vcs.mk SIMTOOL=vcs sim INVOKE_ARGS= CCS_VCD_FILE=./default.fsdb CCS_VCD_TIMES=0,ns,end,ns USE_FSDB=true'
+# Make utility invoked from '/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1'
+#     /cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/bin/make -f ./scverify/Verify_concat_sim_rtl_v_vcs.mk SIMTOOL=vcs INVOKE_ARGS= CCS_VCD_FILE=./default.fsdb CCS_VCD_TIMES=0,ns,end,ns USE_FSDB=true build < "/dev/null" (BASIC-15)
+# make[1]: Entering directory `/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1'
+# /cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/shared/include/mkfiles/ccs_vcs.mk:234: Warning: Applying the gcc option for the C++11 language standard
+# ============================================
+# Creating directory 'scverify/concat_sim_rtl_v_vcs'
+# mkdir -p scverify/concat_sim_rtl_v_vcs
+# mkdir -p scverify/concat_sim_rtl_v_vcs/sysc
+# ============================================
+# Setting up synopsys_sim.setup file
+# echo "WORK > DEFAULT" >>scverify/concat_sim_rtl_v_vcs/synopsys_sim.setup
+# echo "DEFAULT : scverify/concat_sim_rtl_v_vcs/work" >>scverify/concat_sim_rtl_v_vcs/synopsys_sim.setup
+# ============================================
+# Creating physical library 'scverify/concat_sim_rtl_v_vcs/work'
+# mkdir -p scverify/concat_sim_rtl_v_vcs/work
+# ============================================
+# Mapping logical library 'work' to physical path './scverify/concat_sim_rtl_v_vcs/work'
+# echo "work : ./scverify/concat_sim_rtl_v_vcs/work" >>scverify/concat_sim_rtl_v_vcs/synopsys_sim.setup
+# ============================================
+# Creating VCS-MX wave TCL file 'scverify/concat_sim_rtl_v_vcs/scverify_vcs_wave.tcl'
+# /cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/bin/tclsh8.5 /cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/pkgs/sif/userware/En_na/flows/app_vcs.flo create_vcs_wave ./Catapult/SysTop.v1/scverify/ccs_wave_signals.dat scverify/concat_sim_rtl_v_vcs/scverify_vcs_wave.tcl ./Catapult/SysTop.v1/.dut_inst_info.tcl  0
+# app_vcs.flo - Executing command 'create_vcs_wave ./Catapult/SysTop.v1/scverify/ccs_wave_signals.dat scverify/concat_sim_rtl_v_vcs/scverify_vcs_wave.tcl ./Catapult/SysTop.v1/.dut_inst_info.tcl 0'...
+# Wrote VCS waveform creation script to 'scverify/concat_sim_rtl_v_vcs/scverify_vcs_wave.tcl'
+# ============================================
+# Compiling VHDL file: /cad/tools/synopsys/novas/2012.10/share/PLI/VCS/LINUX64/novas.vhd
+# vhdlan -full64 -psl -verbose -work work   /cad/tools/synopsys/novas/2012.10/share/PLI/VCS/LINUX64/novas.vhd 
+#                      Synopsys 1076 VHDL Analyzer
+#                Version L-2016.06-SP1-1 -- Sep 27, 2016
+#               Copyright (c) 1991-2016 by Synopsys Inc.
+#                          ALL RIGHTS RESERVED
+# 
+# This program is proprietary and confidential information of Synopsys Inc.
+# and may be used and disclosed only as authorized in a license agreement
+# controlling such use and disclosure.
+# 
+#   NOTE: SYNOPSYS_SIM_SETUP=scverify/concat_sim_rtl_v_vcs/synopsys_sim.setup...
+#   Reading scverify/concat_sim_rtl_v_vcs/synopsys_sim.setup...
+# 
+# Parsing design file '/cad/tools/synopsys/novas/2012.10/share/PLI/VCS/LINUX64/novas.vhd'
+# 	Design Unit: PACKAGE DECLARATION: NOVAS
+# 	Semantic processing phase
+# 	Code generation phase
+# 	Writing intermediate file ./scverify/concat_sim_rtl_v_vcs/work/64/NOVAS.sim
+# 	Design Unit: PACKAGE BODY: NOVAS
+# 	Semantic processing phase
+# 	Code generation phase
+# 	Writing intermediate file ./scverify/concat_sim_rtl_v_vcs/work/64/NOVAS__.sim
+# 	Design Unit: PACKAGE DECLARATION: PKG
+# 	Semantic processing phase
+# 	Code generation phase
+# 	Writing intermediate file ./scverify/concat_sim_rtl_v_vcs/work/64/PKG.sim
+# 	Design Unit: PACKAGE BODY: PKG
+# 	Semantic processing phase
+# 	Code generation phase
+# 	Writing intermediate file ./scverify/concat_sim_rtl_v_vcs/work/64/PKG__.sim
+# ============================================
+# Compiling Verilog file: concat_sim_rtl.v
+# vlogan -full64 -psl -verbose  -Mdir=scverify/concat_sim_rtl_v_vcs -sysc=231 +v2k -sysc=231 -sc_model SysTop_rtl -sc_portmap ./scverify/dut_v_ports.map    concat_sim_rtl.v
+# vlogan  '-full64' '-psl' '-verbose' '-Mdir=scverify/concat_sim_rtl_v_vcs' '+v2k'  concat_sim_rtl.v 
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/bin/vcs1 -Mdir=scverify/concat_sim_rtl_v_vcs -Mcc=gcc -Mcplusplus=g++ -Masflags= -Mcfl= -pipe -O -I/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/include  -Mldflags=  -Mout=simv -Mamsrun="" -Mvcsaceobjs="" -Mobjects=" " -Msaverestoreobj= -Mcrt0= -Mcrtn="" -Mcsrc="" -Mdir=scverify/concat_sim_rtl_v_vcs -Msyslibs=-ldl  -Xvlogan=0x1 -full64 -psl +v2k concat_sim_rtl.v  
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin/vlogan: line 703: dc: command not found
+#                          Chronologic VCS (TM)
+#       Version L-2016.06-SP1-1_Full64 -- Fri Apr 17 23:41:25 2020
+#                Copyright (c) 1991-2016 by Synopsys Inc.
+#                          ALL RIGHTS RESERVED
+# 
+# This program is proprietary and confidential information of Synopsys Inc.
+# and may be used and disclosed only as authorized in a license agreement
+# controlling such use and disclosure.
+# 
+# Parsing design file 'concat_sim_rtl.v'
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 4820
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 4825
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 4830
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 4835
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 4840
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 4845
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 4850
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 6822
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 6827
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 6832
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 6837
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 6842
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 6847
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 6852
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9452
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9459
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9464
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9471
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9476
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9483
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9488
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9495
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9500
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9507
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9512
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9519
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9524
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9531
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9536
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9543
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9548
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9555
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9560
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9567
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9572
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9579
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9584
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9591
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9596
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9603
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9608
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9615
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9620
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9627
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# 
+# Warning-[PSL-DEFCLK] Previous default clock overridden
+# concat_sim_rtl.v, 9632
+#   Previous default clock declaration 'posedge clk' is overridden by clock 
+#   'posedge clk'.
+# 
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin/vlogan: line 703: dc: command not found
+# syscan  -full64  -verilog_file -vlogan   -cpp g++ -sysc=231  -Mdir=scverify/concat_sim_rtl_v_vcs -cflags ""    concat_sim_rtl.v:SysTop_rtl  -V -port ./scverify/dut_v_ports.map  -vcs_args '-full64' '-psl' '-verbose' '-Mdir=scverify/concat_sim_rtl_v_vcs' '+v2k' 
+# 
+# Note-[SC-SYSCAN-USE-CPP] Using C++-compiler
+#   Using 'g++' C++-compiler for C++ compilation.
+# 
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/bin/verilog2vdef /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/concat_sim_rtl.v             -m SysTop_rtl             -o SysTop_rtl             -output_dir /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sysc/SysTop_rtl             -f /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/dut_v_ports.map             -osci                          -work DEFAULT -work_dir /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/work/AN.DB
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/bin/ifgen /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sysc/SysTop_rtl/SysTop_rtl.vdef             -output SysTop_rtl             -hdl_output  /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sysc/SysTop_rtl             -ccss_output /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sysc/SysTop_rtl             -sysc 231 	                 -direct -osci
+# ============================================
+# Compiling C++ file: scverify/sysc_sim.cpp
+# syscan -full64 -sysc=231 -Mdir=scverify/concat_sim_rtl_v_vcs -debug_all -cflags "-DCCS_DUT_RTL -DCCS_DUT_VERILOG -D_SYNTHESIS_ -DHLS_CATAPULT -DHLS_ALGORITHMICC -DCONNECTIONS_ACCURATE_SIM -DSC_INCLUDE_DYNAMIC_PROCESSES -DSC_INCLUDE_DYNAMIC_PROCESSES -DCCS_SYSC -DSC_USE_STD_STRING -DTOP_HDL_ENTITY=SysTop_rtl -DDEADLOCK_DETECTION -std=gnu++11 -g -Wall -Wno-unknown-pragmas -I. -I../.. -I../../../../../matchlib/cmod/include -I../../../../../matchlib/connections/include -I../../../../../matchlib/rapidjson/include -I./scverify -I. -I../.. -I/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/shared/include -I../.. -I../../../../../matchlib/cmod/include -I../../../../../matchlib/connections/include -I../../../../../matchlib/rapidjson/include -I/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/include/systemc231 -I. -I../.. -I../../../../../matchlib/cmod/include -I../../../../../matchlib/connections/include -I../../../../../matchlib/rapidjson/include -I./scverify -I. -I../.. -I/cad/tools/mentor/catapult/Cat
+# apult_Synthesis_10.4b-841621/Mgc_home/shared/include -I../.. -I../../../../../matchlib/cmod/include -I../../../../../matchlib/connections/include -I../../../../../matchlib/rapidjson/include -I/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/shared/include -I/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/pkgs/hls_pkgs/src -I/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/pkgs/siflibs -I/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/pkgs/hls_pkgs/mgc_comps_src -DSC_USE_STD_STRING " scverify/sysc_sim.cpp
+# /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/sysc_sim.cpp: In constructor 'CCS_RTL::sysc_sim_wrapper::sysc_sim_wrapper(const sc_core::sc_module_name&)':
+# /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/sysc_sim.cpp:116:28: warning: 'CCS_RTL::sysc_sim_wrapper::ccs_rtl' will be initialized after [-Wreorder]
+#        HDL::ccs_DUT_wrapper ccs_rtl;
+#                             ^
+# /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/sysc_sim.cpp:48:29: warning:   'sc_core::sc_in<bool> CCS_RTL::sysc_sim_wrapper::clk' [-Wreorder]
+#        sc_core::sc_in<bool > clk;
+#                              ^
+# /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/sysc_sim.cpp:123:7: warning:   when initialized here [-Wreorder]
+#        sysc_sim_wrapper(
+#        ^
+# ============================================
+# Elaborating design
+# SYNOPSYS_SIM_SETUP: scverify/concat_sim_rtl_v_vcs/synopsys_sim.setup
+# vcs -full64 +libverbose -lca -psl -cm assert -debug -assert enable_diag  -Mdir=scverify/concat_sim_rtl_v_vcs -debug_all -timescale=1ps/1ps -sysc=blocksync -load libnovas.so:FSDBDumpCmd +vcsd +memcbk -sysc=231 sc_main -o scverify/concat_sim_rtl_v_vcs/sc_mainpwr -LDFLAGS "" -l scverify/concat_sim_rtl_v_vcs/elab.log
+# 
+# Warning-[LCA_FEATURES_ENABLED] Usage warning
+#   LCA features enabled by '-lca' argument on the command line.  For more 
+#   information regarding list of LCA features please refer to Chapter "LCA 
+#   features" in the VCS/VCS-MX Release Notes
+# 
+# Doing common elaboration 
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin/vcs: line 2465: dc: command not found
+#                          Chronologic VCS (TM)
+#       Version L-2016.06-SP1-1_Full64 -- Fri Apr 17 23:41:40 2020
+#                Copyright (c) 1991-2016 by Synopsys Inc.
+#                          ALL RIGHTS RESERVED
+# 
+# This program is proprietary and confidential information of Synopsys Inc.
+# and may be used and disclosed only as authorized in a license agreement
+# controlling such use and disclosure.
+# 
+# Top Level Modules:
+#        sYsTeMcToP
+# TimeScale is 1 ps / 1 ps
+# Starting vcs inline pass...
+# 1 unique modules to generate
+# recompiling module sYsTeMcToP
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin/vcs: line 2465: dc: command not found
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin/vcs: line 2465: dc: command not found
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin/vcs: line 2465: dc: command not found
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin/vcs: line 2465: dc: command not found
+# make[2]: Entering directory `/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs'
+# if [ -x /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr_elab ]; then chmod -x /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr_elab; fi
+# g++  -o /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr_elab  -Wl,-rpath,/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/gnu/linux/gcc-4.8.3_64-shared/lib64 -rdynamic -L/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/cosim/sysc231-gcc4 -L/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib -rdynamic -Wl,-E   -Wl,-whole-archive    /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvcsucli.so -Wl,-no-whole-archive  /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sysc/sysc_globals.o /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/ucli_sysc.o   objs/ivVCS_d.o amcQwB.o objs/amcQw_d.o    SIM_l.o      rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o     /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sysc/SysTop_rtl/SysTop_rtl.o /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sysc/sysc_sim.o /home/billyk/cs148/hls/lab3/SysTop/Cata
+# pult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sysc/libconcat_sim_rtl_v_vcs_sysc_stubs.a    /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libzerosoft_rt_stubs.so /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/liberrorinf.so /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libsnpsmalloc.so -lsysctli -lbfSim -lbfCbug -lsystemc231-gcc4-64 /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvirsim.so     /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvcsnew.so /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvcsucli.so   /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libsimprofile.so /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libuclinative.so            /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/vcs_save_restore_new.o -ldl -lm  -lc -lpthread -ldl 
+# /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr_elab up to date
+# make[2]: Leaving directory `/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs'
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin/vcs: line 2465: dc: command not found
+# ================================
+# SETTING RANDOM SEED = 1587181304
+# ================================
+# Weight Matrix 
+# 	82	-61	-121	100	45	-9	84	53	
+# 	56	-116	-28	-108	101	-103	-89	109	
+# 	18	68	-59	-1	-84	-18	-26	14	
+# 	-24	120	54	108	121	17	55	26	
+# 	-82	-29	6	102	-39	-76	120	-35	
+# 	93	44	99	46	-99	-3	-67	30	
+# 	118	-33	-28	48	-103	125	-90	113	
+# 	-79	-106	54	-16	4	-88	6	45	
+# 
+# Input Matrix 
+# 	-56	-7	81	106	13	-4	67	-73	12	8	19	22	-26	-39	-123	105	19	-6	-116	80	76	77	-70	-125	
+# 	83	9	-124	125	-34	87	94	-79	34	-42	16	72	115	-20	-102	-12	-5	83	28	-23	40	95	0	-9	
+# 	-68	-47	-12	40	-81	-107	-124	55	-122	-2	91	-99	40	9	13	75	-49	-107	54	43	-46	47	73	-43	
+# 	-16	113	-70	-49	11	11	-38	-31	115	108	52	-113	87	92	36	111	4	97	-16	-95	9	20	2	-116	
+# 	108	32	-112	-90	110	-120	51	-89	-39	-11	57	-60	66	38	-50	-69	-85	-38	-118	36	-126	-117	-92	-20	
+# 	59	70	120	-74	-29	-1	-113	-21	-107	118	69	24	71	124	-42	105	74	-123	-70	124	24	79	54	-31	
+# 	0	-20	-14	13	-88	37	-14	-113	61	-2	79	-106	-9	14	32	-7	72	103	-22	116	-2	16	39	45	
+# 	-77	92	-89	106	-40	-53	104	25	-86	-21	-11	38	-8	-28	-43	-125	62	-117	-46	-125	109	-93	19	-122	
+# 
+# Reference Output Matrix 
+# 	-2779	19870	-3355	-5347	9740	3320	18612	-22905	24946	11422	2768	-11715	-4136	6419	-3300	104	13035	18940	-28320	-3117	9981	-12729	-14716	-19405	
+# 	-12694	-4494	-5311	4537	23321	-29595	29796	12840	-19997	-21664	-18536	12900	-26030	-23284	-7567	-37602	-13273	-30533	-17292	-16881	-3207	-41699	-22434	-8354	
+# 	-2548	1006	170	18135	-4300	20540	14522	1242	12023	-4144	-12229	19142	-1795	-8865	-6431	-1124	7693	12842	7746	-12588	18523	11741	439	-849	
+# 	17973	17268	-39628	647	-641	-7934	5056	-24797	4205	6343	24123	-21132	34470	15706	-10820	1879	-6725	10736	-10542	-3024	-10650	-102	-1737	-16574	
+# 	-5856	-631	-13575	-10091	-10690	9336	-11561	-3923	29011	3522	6226	-29546	-859	4970	27281	1756	2862	34622	16284	-7858	-7715	-3013	9881	11227	
+# 	-22203	1012	6665	28505	-13907	1183	-4309	10949	-6661	3905	2399	4325	4220	-5296	-11342	25003	2109	-9317	7040	-9143	20494	24398	7712	-26216	
+# 	-20661	23267	28365	15739	-6103	3097	86	10502	-15336	21260	-3937	20582	-1824	7384	-17623	22751	22502	-29747	-16706	-8338	37843	15572	4655	-38468	
+# 	-16015	-6759	-7880	-7680	-1309	-17415	-6601	19546	-7224	-9401	-4980	-14186	-15766	-7721	22408	-19932	-7311	-9629	12854	-15737	-10595	-25444	5409	7791	
+# 
+# 
+# Warning-[LCA_FEATURES_ENABLED] Usage warning
+#   LCA features enabled by '-lca' argument on the command line.  For more 
+#   information regarding list of LCA features please refer to Chapter "LCA 
+#   features" in the VCS/VCS-MX Release Notes
+# 
+# Doing common elaboration 
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin/vcs: line 2465: dc: command not found
+#                          Chronologic VCS (TM)
+#       Version L-2016.06-SP1-1_Full64 -- Fri Apr 17 23:41:46 2020
+#                Copyright (c) 1991-2016 by Synopsys Inc.
+#                          ALL RIGHTS RESERVED
+# 
+# This program is proprietary and confidential information of Synopsys Inc.
+# and may be used and disclosed only as authorized in a license agreement
+# controlling such use and disclosure.
+# 
+# Top Level Modules:
+#        sYsTeMcToP
+# TimeScale is 1 ps / 1 ps
+# Starting vcs inline pass...
+# 18 unique modules to generate
+# recompiling module sYsTeMcToP
+# recompiling module SysArray
+# recompiling module SysPE
+# recompiling module InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_297_32_8_5_0_0_0_0_0_1_1_32_8_1_gen
+# recompiling module InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_298_32_8_5_0_0_0_0_0_1_1_32_8_1_gen
+# recompiling module InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_299_32_8_5_0_0_0_0_0_1_1_32_8_1_gen
+# recompiling module InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_300_32_8_5_0_0_0_0_0_1_1_32_8_1_gen
+# recompiling module InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_301_32_8_5_0_0_0_0_0_1_1_32_8_1_gen
+# recompiling module InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_302_32_8_5_0_0_0_0_0_1_1_32_8_1_gen
+# recompiling module InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_303_32_8_5_0_0_0_0_0_1_1_32_8_1_gen
+# recompiling module InputSetup_ram_sample_065nm_singleport_beh_dc_RAM_rwport_en_304_32_8_5_0_0_0_0_0_1_1_32_8_1_gen
+# recompiling module mgc_shift_l_v5
+# recompiling module InputSetup_MemoryRun_req_inter_PopNB_mioi
+# recompiling module InputSetup_MemoryRun_write_req_PopNB_mioi
+# recompiling module InputSetup_MemoryRun_rsp_inter_Push_mioi
+# recompiling module InputSetup_MemoryRun_wait_dp
+# recompiling module InputSetup_ReadReqRun
+# recompiling module InputSetup_ReadRspRun
+# All of 18 modules done
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin/vcs: line 2465: dc: command not found
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin/vcs: line 2465: dc: command not found
+# make[2]: Entering directory `/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs'
+# make[2]: Leaving directory `/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs'
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin/vcs: line 2465: dc: command not found
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin/vcs: line 2465: dc: command not found
+# make[2]: Entering directory `/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs'
+# if [ -x /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr ]; then chmod -x /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr; fi
+# g++  -o /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr  -Wl,-rpath,/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/gnu/linux/gcc-4.8.3_64-shared/lib64 -rdynamic -L/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/cosim/sysc231-gcc4 -L/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib -rdynamic -Wl,-E   -Wl,-whole-archive    /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvcsucli.so -Wl,-no-whole-archive  /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sysc/sysc_globals.o /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/ucli_sysc.o   objs/At9Kv_d.o objs/hJ0PG_d.o objs/mF1iW_d.o objs/s1hrd_d.o objs/RuFWa_d.o objs/IhF1j_d.o objs/edmvU_d.o objs/dyE6Q_d.o objs/S4YDe_d.o objs/ivVCS_d.o objs/rWsbc_d.o objs/Ig70K_d.o objs/tTGbr_d.o amcQwB.o objs/amcQw_d.o objs/cZwCV_d.o objs/ymfnw_d.o objs/LpIbR_d.o objs/SkH4j_d.o objs/hY86z_d.o    SIM_l.o      rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o     /h
+# ome/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sysc/SysTop_rtl/SysTop_rtl.o /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sysc/sysc_sim.o /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sysc/libconcat_sim_rtl_v_vcs_sysc_stubs.a    /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libzerosoft_rt_stubs.so /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/liberrorinf.so /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libsnpsmalloc.so -lsysctli -lbfSim -lbfCbug -lsystemc231-gcc4-64 /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvirsim.so     /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvcsnew.so /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvcsucli.so   /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libsimprofile.so /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libreader_common.so /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/l
+# ibBA.a /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libuclinative.so            /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/vcs_save_restore_new.o -ldl -lm  -lc -lpthread -ldl 
+# /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr up to date
+# make[2]: Leaving directory `/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs'
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin/vcs: line 2465: dc: command not found
+# make[1]: Leaving directory `/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1'
+#     /cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/bin/make -f ./scverify/Verify_concat_sim_rtl_v_vcs.mk SIMTOOL=vcs sim INVOKE_ARGS= CCS_VCD_FILE=./default.fsdb CCS_VCD_TIMES=0,ns,end,ns USE_FSDB=true (BASIC-14)
+# make[1]: Entering directory `/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1'
+# Warning: /cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/shared/include/mkfiles/ccs_vcs.mk:234: Warning: Applying the gcc option for the C++11 language standard
+# ============================================
+# Simulating design entity: sc_main to produce Switching Activity File: ./default.fsdb
+# SYNOPSYS_SIM_SETUP: ./Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/synopsys_sim.setup
+# cd ../..; ./Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr -systemcrun   -verilogrun -cm assert  -ucli -ucli2Proc -i ./Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/scverify_vcs_wave.tcl -l ./Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sim.log
+# ================================
+# SETTING RANDOM SEED = 1587181311
+# ================================
+# Weight Matrix 
+# 	-82	-121	-95	-92	-10	91	22	111	
+# 	68	-29	69	-80	40	117	-56	-7	
+# 	4	-76	35	72	89	-83	79	121	
+# 	-81	-84	-95	-18	-57	64	19	7	
+# 	-71	-67	19	-10	-88	-37	-64	-117	
+# 	-80	99	-108	28	-74	-21	-107	-31	
+# 	-83	43	-92	45	-60	69	93	-13	
+# 	8	96	-87	-9	-40	40	-43	-69	
+# 
+# Input Matrix 
+# 	-87	68	7	-102	122	80	-80	-26	-101	84	-62	-93	46	7	-43	-121	-87	-52	60	124	70	-113	17	-82	
+# 	-69	-16	77	23	94	-128	-32	-78	-46	58	-27	-59	-125	33	-55	64	-47	1	-61	-102	54	86	33	-96	
+# 	-121	2	-111	-105	28	-87	-121	106	26	118	-124	-1	43	-47	94	64	76	81	10	-14	-96	11	-124	127	
+# 	-31	124	6	31	-47	127	99	20	2	-115	77	50	26	20	-77	61	-120	-7	52	-63	9	52	-1	28	
+# 	-83	13	40	-25	125	-32	-114	-60	-42	-90	-43	16	-89	75	-115	-88	16	53	-11	122	24	-94	120	-66	
+# 	35	90	-53	-41	-81	24	-118	120	118	-45	-54	-35	-87	-118	-27	112	-84	0	53	-23	-5	33	-62	32	
+# 	71	-93	66	-12	-1	12	-58	-20	71	-23	-60	97	-44	69	28	-50	89	116	-15	-122	-25	-44	16	32	
+# 	-84	-44	-36	48	-73	70	-37	54	-123	-48	20	102	-23	-87	-6	81	-44	24	90	97	-66	-27	-68	-51	
+# 
+# Reference Output Matrix 
+# 	26083	-14108	-7665	14287	-36460	16047	-2162	16734	10261	-23565	9463	20371	-5672	-21569	6978	9449	5911	1778	11320	14070	-12553	-6991	-7553	2314	
+# 	-12397	11872	-17941	-22789	7352	-6645	-35640	18590	5111	14131	-22967	-18283	-3474	-19385	2032	1269	-3573	-1960	8350	23806	-1913	-10825	-11151	3400	
+# 	-16418	-8498	-460	2439	-124	20725	-4406	628	-18660	-20122	1343	32011	6102	8708	-4754	-9993	7347	18832	13297	18088	-13946	-20707	2010	1256	
+# 	32628	-3642	-1268	14656	-32431	14329	16466	9326	19973	-19339	15679	11089	729	-10359	5876	9048	1030	-4090	2742	-9077	-3873	6393	-3331	8198	
+# 	20104	1668	-9396	2265	-13356	-7057	26974	4688	19904	10215	10367	-8218	22224	-272	19323	2232	13122	-9662	-11066	-15032	-3107	14976	-7098	22930	
+# 	12743	4695	11426	25152	-9973	-7710	37339	-14144	-2380	-5388	27951	-10883	-6137	585	-8046	17811	-16840	-21763	-11947	-18768	13416	29630	8089	-13507	
+# 	29081	-3583	13761	17441	-23008	5357	14636	-730	22967	-19729	11872	11844	-16435	968	-3190	16957	-5099	3888	-4431	-37739	2497	18581	2265	2061	
+# 	10949	7833	12977	6812	4827	-8328	10811	-12764	4330	3110	7767	-20020	-12048	2449	-10379	3620	-15531	-16068	-9719	-14262	18484	14762	10825	-15110	
+# 
+# Chronologic VCS simulator copyright 1991-2016
+# Contains Synopsys proprietary information.
+# Compiler version L-2016.06-SP1-1_Full64; Runtime version L-2016.06-SP1-1_Full64;  Apr 17 23:41 2020
+# *Novas* Loading libsscore_vcs201209.so
+# Warning: *Novas* WARNING: Not support SystemC version for VCS 2016.6 SC 2.3. Disable SystemC dumping support.
+# GCC=GNU C++ 4.8.3 -m64 -mtune=generic -march=x86-64 -g -O -fPIC
+# ucli% # Source static function file
+# ucli% global env
+# ucli% # Source the common TCL file (that also reads the wave database file)
+# ucli% source $env(MGC_HOME)/pkgs/sif/userware/En_na/flows/vcs_funcs.tcl
+# ucli% read_ccs_wave ./Catapult/SysTop.v1/scverify/ccs_wave_signals.dat
+# Reading SCVerify waveform database './Catapult/SysTop.v1/scverify/ccs_wave_signals.dat'
+# ucli% setup_vcd_file ./Catapult/SysTop.v1/.dut_inst_info.tcl
+# DUT Instance Path = my_testbench.top.ccs_rtl
+# Preparing to write FSDB file ./default.fsdb...
+# ucli% populate_wave_window
+# ucli% if { ("0" != {}) && [file exists "0"] } {
+#    source "0"
+# }
+# ucli% # If not running in GUI mode, run the entire simulation
+# ucli% if { ![gui_is_active] } {
+#    do_simulation_run
+# }
+# Running up to VCD start time: '0 ns'
+# run 0 ns
+# top.v, 73 : (*vcs_systemc_2,vcs_systemc_skel*) module sYsTeMcToP;
+# Turning FSDB on
+# Novas FSDB Dumper for VCS, Release 2012.10, Linux x86_64/64bit, 10/18/2012
+# Copyright (C) 1996 - 2012 by SpringSoft, Inc.
+# ***********************************************************************
+# Warning: -                                                          *
+# *  The simulator version is newer than the FSDB dumper version which  *
+# *  may cause abnormal behavior. Please contact SpringSoft support at  *
+# *  support@springsoft.com for assistance.                             *
+# ***********************************************************************
+# *Novas* : Create FSDB file './default.fsdb'
+# *Novas* : Begin traversing the scopes, layer (0).
+# *Novas* : End of traversing.
+# fsdbDumpvars 0 my_testbench.top.ccs_rtl
+# Error: *Novas* ERROR: The #2 argument is invalid
+# Error: *Novas* ERROR: Syntax - fsdbDumpvars [depth] [instance] [option]*
+# *Novas* : fsdbDumpon - All FSDB files at 0 ps.
+# Continuing to VCD end time: 'end'
+# run -all
+# @10500 ps Asserting Reset 
+# @11500 ps Deasserting Reset 
+# 111 ns my_testbench.src: Start Loading Weight Matrix
+# 118 ns my_testbench.src: Finish Loading Weight Matrix
+# 119 ns my_testbench.src: Start Sending Input Matrix
+# 142 ns my_testbench.src: Finish Sending Input Matrix
+# 143 ns my_testbench.src: Start Computation
+# 166 ns my_testbench.sink accum_out_vec: 	26083	-	-	-	-	-	-	-	
+# 167 ns my_testbench.sink accum_out_vec: 	-	-12397	-	-	-	-	-	-	
+# 168 ns my_testbench.sink accum_out_vec: 	-14108	-	-16418	-	-	-	-	-	
+# 169 ns my_testbench.sink accum_out_vec: 	-	11872	-	32628	-	-	-	-	
+# 170 ns my_testbench.sink accum_out_vec: 	-7665	-	-8498	-	20104	-	-	-	
+# 171 ns my_testbench.sink accum_out_vec: 	-	-17941	-	-3642	-	12743	-	-	
+# 172 ns my_testbench.sink accum_out_vec: 	14287	-	-460	-	1668	-	29081	-	
+# 173 ns my_testbench.sink accum_out_vec: 	-	-22789	-	-1268	-	4695	-	10949	
+# 174 ns my_testbench.sink accum_out_vec: 	-36460	-	2439	-	-9396	-	-3583	-	
+# 175 ns my_testbench.sink accum_out_vec: 	-	7352	-	14656	-	11426	-	7833	
+# 176 ns my_testbench.sink accum_out_vec: 	16047	-	-124	-	2265	-	13761	-	
+# 177 ns my_testbench.sink accum_out_vec: 	-	-6645	-	-32431	-	25152	-	12977	
+# 178 ns my_testbench.sink accum_out_vec: 	-2162	-	20725	-	-13356	-	17441	-	
+# 179 ns my_testbench.sink accum_out_vec: 	-	-35640	-	14329	-	-9973	-	6812	
+# 180 ns my_testbench.sink accum_out_vec: 	16734	-	-4406	-	-7057	-	-23008	-	
+# 181 ns my_testbench.sink accum_out_vec: 	-	18590	-	16466	-	-7710	-	4827	
+# 182 ns my_testbench.sink accum_out_vec: 	10261	-	628	-	26974	-	5357	-	
+# 183 ns my_testbench.sink accum_out_vec: 	-	5111	-	9326	-	37339	-	-8328	
+# 184 ns my_testbench.sink accum_out_vec: 	-23565	-	-18660	-	4688	-	14636	-	
+# 185 ns my_testbench.sink accum_out_vec: 	-	14131	-	19973	-	-14144	-	10811	
+# 186 ns my_testbench.sink accum_out_vec: 	9463	-	-20122	-	19904	-	-730	-	
+# 187 ns my_testbench.sink accum_out_vec: 	-	-22967	-	-19339	-	-2380	-	-12764	
+# 188 ns my_testbench.sink accum_out_vec: 	20371	-	1343	-	10215	-	22967	-	
+# 189 ns my_testbench.sink accum_out_vec: 	-	-18283	-	15679	-	-5388	-	4330	
+# 190 ns my_testbench.sink accum_out_vec: 	-5672	-	32011	-	10367	-	-19729	-	
+# 191 ns my_testbench.sink accum_out_vec: 	-	-3474	-	11089	-	27951	-	3110	
+# 192 ns my_testbench.sink accum_out_vec: 	-21569	-	6102	-	-8218	-	11872	-	
+# 193 ns my_testbench.sink accum_out_vec: 	-	-19385	-	729	-	-10883	-	7767	
+# 194 ns my_testbench.sink accum_out_vec: 	6978	-	8708	-	22224	-	11844	-	
+# 195 ns my_testbench.sink accum_out_vec: 	-	2032	-	-10359	-	-6137	-	-20020	
+# 196 ns my_testbench.sink accum_out_vec: 	9449	-	-4754	-	-272	-	-16435	-	
+# 197 ns my_testbench.sink accum_out_vec: 	-	1269	-	5876	-	585	-	-12048	
+# 198 ns my_testbench.sink accum_out_vec: 	5911	-	-9993	-	19323	-	968	-	
+# 199 ns my_testbench.sink accum_out_vec: 	-	-3573	-	9048	-	-8046	-	2449	
+# 200 ns my_testbench.sink accum_out_vec: 	1778	-	7347	-	2232	-	-3190	-	
+# 201 ns my_testbench.sink accum_out_vec: 	-	-1960	-	1030	-	17811	-	-10379	
+# 202 ns my_testbench.sink accum_out_vec: 	11320	-	18832	-	13122	-	16957	-	
+# 203 ns my_testbench.sink accum_out_vec: 	-	8350	-	-4090	-	-16840	-	3620	
+# 204 ns my_testbench.sink accum_out_vec: 	14070	-	13297	-	-9662	-	-5099	-	
+# 205 ns my_testbench.sink accum_out_vec: 	-	23806	-	2742	-	-21763	-	-15531	
+# 206 ns my_testbench.sink accum_out_vec: 	-12553	-	18088	-	-11066	-	3888	-	
+# 207 ns my_testbench.sink accum_out_vec: 	-	-1913	-	-9077	-	-11947	-	-16068	
+# 208 ns my_testbench.sink accum_out_vec: 	-6991	-	-13946	-	-15032	-	-4431	-	
+# 209 ns my_testbench.sink accum_out_vec: 	-	-10825	-	-3873	-	-18768	-	-9719	
+# 210 ns my_testbench.sink accum_out_vec: 	-7553	-	-20707	-	-3107	-	-37739	-	
+# 211 ns my_testbench.sink accum_out_vec: 	-	-11151	-	6393	-	13416	-	-14262	
+# 212 ns my_testbench.sink accum_out_vec: 	2314	-	2010	-	14976	-	2497	-	
+# 213 ns my_testbench.sink accum_out_vec: 	-	3400	-	-3331	-	29630	-	18484	
+# 214 ns my_testbench.sink accum_out_vec: 	-	-	1256	-	-7098	-	18581	-	
+# 215 ns my_testbench.sink accum_out_vec: 	-	-	-	8198	-	8089	-	14762	
+# 216 ns my_testbench.sink accum_out_vec: 	-	-	-	-	22930	-	2265	-	
+# 217 ns my_testbench.sink accum_out_vec: 	-	-	-	-	-	-13507	-	10825	
+# 218 ns my_testbench.sink accum_out_vec: 	-	-	-	-	-	-	2061	-	
+# 219 ns my_testbench.sink accum_out_vec: 	-	-	-	-	-	-	-	-15110	
+# @1011500 ps Stop 
+# Check Output Count
+# Implementation Correct :)
+# 
+# Info: SystemC: Simulation stopped by user.
+# CMODEL PASS
+# "concat_sim_rtl.v", 6818: sYsTeMcToP.\my_testbench.top .ccs_rtl.is_inst.InputSetup_ReadRspRun_inst.InputSetup_ReadRspRun_connections_h_ln2309_assert_0_and_Unreachablevirtualfunctioninabstractclassnot: Antecedent of the implication never satisfied.
+# "concat_sim_rtl.v", 6823: sYsTeMcToP.\my_testbench.top .ccs_rtl.is_inst.InputSetup_ReadRspRun_inst.InputSetup_ReadRspRun_connections_h_ln2309_assert_0_and_Unreachablevirtualfunctioninabstractclassnot_1: Antecedent of the implication never satisfied.
+# "concat_sim_rtl.v", 6828: sYsTeMcToP.\my_testbench.top .ccs_rtl.is_inst.InputSetup_ReadRspRun_inst.InputSetup_ReadRspRun_connections_h_ln2309_assert_0_and_Unreachablevirtualfunctioninabstractclassnot_2: Antecedent of the implication never satisfied.
+# "concat_sim_rtl.v", 6833: sYsTeMcToP.\my_testbench.top .ccs_rtl.is_inst.InputSetup_ReadRspRun_inst.InputSetup_ReadRspRun_connections_h_ln2309_assert_0_and_Unreachablevirtualfunctioninabstractclassnot_3: Antecedent of the implication never satisfied.
+# "concat_sim_rtl.v", 6838: sYsTeMcToP.\my_testbench.top .ccs_rtl.is_inst.InputSetup_ReadRspRun_inst.InputSetup_ReadRspRun_connections_h_ln2309_assert_0_and_Unreachablevirtualfunctioninabstractclassnot_4: Antecedent of the implication never satisfied.
+# "concat_sim_rtl.v", 6843: sYsTeMcToP.\my_testbench.top .ccs_rtl.is_inst.InputSetup_ReadRspRun_inst.InputSetup_ReadRspRun_connections_h_ln2309_assert_0_and_Unreachablevirtualfunctioninabstractclassnot_5: Antecedent of the implication never satisfied.
+# "concat_sim_rtl.v", 6848: sYsTeMcToP.\my_testbench.top .ccs_rtl.is_inst.InputSetup_ReadRspRun_inst.InputSetup_ReadRspRun_connections_h_ln2309_assert_0_and_Unreachablevirtualfunctioninabstractclassnot_6: Antecedent of the implication never satisfied.
+# "concat_sim_rtl.v", 6853: sYsTeMcToP.\my_testbench.top .ccs_rtl.is_inst.InputSetup_ReadRspRun_inst.InputSetup_ReadRspRun_connections_h_ln2309_assert_0_and_Unreachablevirtualfunctioninabstractclassnot_7: Antecedent of the implication never satisfied.
+# "concat_sim_rtl.v", 4816: sYsTeMcToP.\my_testbench.top .ccs_rtl.sa_inst.SysArray_AccumInRun_inst.SysArray_AccumInRun_connections_h_ln3314_assert_0_and_Unreachablevirtualfunctioninabstractclassnot: Antecedent of the implication never satisfied.
+# "concat_sim_rtl.v", 4821: sYsTeMcToP.\my_testbench.top .ccs_rtl.sa_inst.SysArray_AccumInRun_inst.SysArray_AccumInRun_connections_h_ln3314_assert_0_and_Unreachablevirtualfunctioninabstractclassnot_1: Antecedent of the implication never satisfied.
+# "concat_sim_rtl.v", 4826: sYsTeMcToP.\my_testbench.top .ccs_rtl.sa_inst.SysArray_AccumInRun_inst.SysArray_AccumInRun_connections_h_ln3314_assert_0_and_Unreachablevirtualfunctioninabstractclassnot_2: Antecedent of the implication never satisfied.
+# "concat_sim_rtl.v", 4831: sYsTeMcToP.\my_testbench.top .ccs_rtl.sa_inst.SysArray_AccumInRun_inst.SysArray_AccumInRun_connections_h_ln3314_assert_0_and_Unreachablevirtualfunctioninabstractclassnot_3: Antecedent of the implication never satisfied.
+# "concat_sim_rtl.v", 4836: sYsTeMcToP.\my_testbench.top .ccs_rtl.sa_inst.SysArray_AccumInRun_inst.SysArray_AccumInRun_connections_h_ln3314_assert_0_and_Unreachablevirtualfunctioninabstractclassnot_4: Antecedent of the implication never satisfied.
+# "concat_sim_rtl.v", 4841: sYsTeMcToP.\my_testbench.top .ccs_rtl.sa_inst.SysArray_AccumInRun_inst.SysArray_AccumInRun_connections_h_ln3314_assert_0_and_Unreachablevirtualfunctioninabstractclassnot_5: Antecedent of the implication never satisfied.
+# "concat_sim_rtl.v", 4846: sYsTeMcToP.\my_testbench.top .ccs_rtl.sa_inst.SysArray_AccumInRun_inst.SysArray_AccumInRun_connections_h_ln3314_assert_0_and_Unreachablevirtualfunctioninabstractclassnot_6: Antecedent of the implication never satisfied.
+# "concat_sim_rtl.v", 4851: sYsTeMcToP.\my_testbench.top .ccs_rtl.sa_inst.SysArray_AccumInRun_inst.SysArray_AccumInRun_connections_h_ln3314_assert_0_and_Unreachablevirtualfunctioninabstractclassnot_7: Antecedent of the implication never satisfied.
+# Simulation complete, time is 1011500 ps.
+# top.v, 73 : (*vcs_systemc_2,vcs_systemc_skel*) module sYsTeMcToP;
+# Turning FSDB off and flushing
+# *Novas* : fsdbDumpoff - All FSDB files at 1,011,500 ps.
+# *Novas* : Close all FSDB Files at 1,011,500 ps.
+# Completed writing FSDB file ./default.fsdb...
+#            V C S   S i m u l a t i o n   R e p o r t 
+# Time: 1011500 ps
+# CPU Time:      2.060 seconds;       Data structure size:   9.0Mb
+# Fri Apr 17 23:41:54 2020
+# make[1]: Leaving directory `/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1'
+# > exit
+// Finish time Fri Apr 17 23:41:57 2020, time elapsed 0:52, peak memory 1019.08MB, exit status 0

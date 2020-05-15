@@ -1,0 +1,441 @@
+Chronologic Simulation VCS Release L-2016.06-SP1-1_Full64
+Linux 3.10.0-1062.12.1.el7.x86_64 #1 SMP Tue Feb 4 23:02:59 UTC 2020 x86_64
+CPU cores: 32
+Limit information:
+======================================
+cputime			unlimited
+filesize		unlimited
+datasize		unlimited
+stacksize		unlimited
+coredumpsize	0 kbytes
+memoryuse		unlimited
+vmemoryuse		unlimited
+descriptors		4096
+memorylocked	64 kbytes
+maxproc			4096
+======================================
+Runtime environment variables:
+CLK_PERIOD=2
+LowPower_CLOCK_TREE_FANOUT=16
+VNCDESKTOP=cad.eecs.harvard.edu:27 (billyk)
+LowPower_SPEF_FILE=
+MANPATH=/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/gnu/linux/gcc-4.8.3_64-shared/man:/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/gnu/linux/binutils-2.22_64/man:/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/doc/man:/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/doc/snps_tcl/man
+DesignAnalyzer_Exe=
+QuestaSIM_SCCOM_OPTS=-g -x c++ -Wall -Wno-unused-label -Wno-unknown-pragmas
+QuestaSIM_WITNESS_WAVEFORM=false
+XDG_SESSION_ID=317
+LowPower_CLOCK_TREE_BUFFER=
+SSH_AGENT_PID=31298
+CDesignChecker_PROPERTY_ABR=false
+QuestaSIM_Path=
+LowPower_NUMERICAL_SOLVERS=false
+HOSTNAME=cad.eecs.harvard.edu
+USE_FSDB=true
+Novas_NOVAS_INST_DIR=/cad/tools/synopsys/novas/2012.10
+SCVLIBS=./Catapult/SysTop.v1
+OSCI_COMP_FLAGS=-Wall -Wno-unknown-pragmas -Wno-unused-label
+SELINUX_ROLE_REQUESTED=
+QuestaSIM_VLOG_OPTS=
+SCVerify_ENABLE_RESET_TOGGLE=false
+NOVAS_HOME=/cad/tools/synopsys/novas/2012.10
+CDesignChecker_CHECK_CMC=Enable
+OSCI_SYSTEMC_NAME=systemc
+DesignCompiler_EnableWireloadSettings=true
+GLADE_PIXMAP_PATH=:
+SCVerify_DISABLE_EMPTY_INPUTS=false
+SCVerify_USE_OSCI=false
+TERM=xterm-256color
+DesignCompiler_ShellType=dctcl
+XDG_MENU_PREFIX=xfce-
+CDesignChecker_CHECK_DBZ=Enable
+SHELL=/bin/bash
+VTE_VERSION=5202
+OSCI_LCOVDIR=
+VCS_VG_ENV64_SCRIPT=source_me.csh
+CDesignChecker_CHECK_CCC=Enable
+NCSim_NCSIM_TIMESCALE=1 ns / 1 ps
+HISTSIZE=1000
+CDesignChecker_FULL_REPORT=false
+NCSim_NCSIM_GCCVERSION=
+DesignCompiler_EnableCapReporting=true
+CDesignChecker_PROPERTY_ABW=false
+QuestaSIM_QUESTA_VISUALIZER=
+MAKEFLAGS=w
+QuestaSIM_COVERCHECK_TIMEOUT=2m
+SSH_CLIENT=65.112.8.16 49154 22
+CDesignChecker_USE_64BIT=false
+OSCI_SYSTEMC_INCLUDE=/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/shared/include
+DesignCompiler_ReferenceLibrary=
+CDesignChecker_CHECK_ALS=Enable
+DesignCompiler_SearchPath=
+SCVerify_MISMATCHED_OUTPUTS_ONLY=true
+Novas_NOVAS_PLATFORM=LINUX
+LIBRARY_PATH=/usr/lib64:IBRARY_PATH
+TCLSH_CMD=/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/bin/tclsh8.5
+DesignCompiler_TLU_max=
+CDesignChecker_SLEC_HOME=
+SELINUX_USE_CURRENT_RANGE=
+WORK2PROJ=../..
+TK_LIBRARY=/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/etc/auxx/tcllib/tk8.4/library
+CDesignChecker_CHECK_APT=Enable
+NCSim_NCELAB_OPTS=
+RUN_SCVERIFY=0
+DesignCompiler_FlowSuffix=dc
+LowPower_SWITCHING_ACTIVITY_TYPE=fsdb
+OSCI_GDBGUI=ddd
+WINDOWID=25165827
+OLDPWD=/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1
+NOVAS_INST_DIR=/cad/tools/synopsys/novas/2012.10
+DesignCompiler_OutNetlistName=gate.dc
+INVOKE_ARGS=
+SCVerify_INVOKE_ARGS=
+QuestaSIM_ENABLE_OLD_MSIM_FLOW=false
+DesignCompiler_MapEffort=medium
+VCS_VG_ENV32_SCRIPT=source_me_32.csh
+LowPower_CLOCK_TREE_FINAL_BUFFER=
+SCVerify_GENERATE_STAGES=schedule extract switching power
+PROJ2SOLN=./Catapult/SysTop.v1
+CXX_TYPE=gcc
+SCVerify_USE_MSIM=false
+LowPower_ITERATIVE_WRITE_RTL=true
+CDesignChecker_WAIVER_FILE=
+CDesignChecker_CHECK_RRT=Enable
+SSH_TTY=/dev/pts/7
+CDesignChecker_CHECK_SAT=Enable
+NCSim_FORCE_32BIT=
+SCVerify_REPLAY_ARGS=
+CDesignChecker_GLOBAL_OPTIONS=
+DesignCompiler_MaxLoopIterations=1000
+DesignCompiler_LicenseServer=
+IN_CCS_FLOW=true
+SCVerify_LINK_LIBPATHS=
+HLD_CONSTRAINT_FNAME=top_gate_constraints.cpp
+QT_GRAPHICSSYSTEM_CHECKED=1
+LINK_LIBPATHS=
+CCS_VCD_FILE=./default.fsdb
+NCSim_NCSC_CXX_OPTS=-x c++ -Wall -Wno-unknown-pragmas -Wno-deprecated
+DEBUSSY_LIB=/cad/tools/synopsys/novas/2012.10/share/PLI/VCS/LINUX64
+USER=billyk
+MAKEOVERRIDES=${-*-command-variables-*-}
+CDesignChecker_VERIFICATION_EFFORT=medium
+DesignCompiler_Flags=
+SCVerify_KEEP_UNUSED_TRANSACTION_CTRLS=true
+SCVerify_MAX_SIM_TIME=0
+LD_LIBRARY_PATH=/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/lib:/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/shared/lib::/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/gnu/linux/gcc-4.8.3_64-shared/lib64:/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/gnu/linux/gcc-4.8.3_64-shared/lib:/lib:/usr/lib:.:/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux/lib:/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux/lib:/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/lib:/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/shared/lib::/cad/tools/accellera/systemc-2.3.1/lib-linux64:/cad/tools/synopsys/novas/2012.10/share/PLI/VCS/LINUX64
+SCVerify_USE_NCSIM=false
+LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+CDesignChecker_STATIC_RPT_FNAME=static_design_check
+CDesignChecker_PROPERTY_UMR=false
+SCVerify_ENABLE_CPP_SCVERIFY_TOP=true
+CDesignChecker_CHECK_CIA=Enable
+QuestaSIM_ENABLE_CODE_COVERAGE=false
+DesignCompiler_GetSynLicense=
+SCVerify_SYNC_ALL_RESETS=true
+VCS_VCSELAB_OPTS=-debug_all -timescale=1ps/1ps -sysc=blocksync
+GLADE_MODULE_PATH=:
+LowPower_INSERT_OBS=true
+NETLIST_LEAF=concat_sim_rtl
+DesignCompiler_EnableClockGating=false
+TCL_LIBRARY=/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/lib/tcl8.5
+Novas_NOVAS_NCSIM_FSDBW=LINUX_GNU_296
+LowPower_CLOCK_TREE_ROOT_BUFFER=
+LowPower_NO_LIBERTY=false
+SSH_AUTH_SOCK=/tmp/ssh-eYhIZjIZk5B1/agent.31297
+CXX_HOME=/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home
+SCVerify_WAVE_PROBES=false
+SCVerify_INCL_DIRS=
+CDesignChecker_CHECK_AIC=Enable
+QuestaSIM_SHOW_LIST=false
+CDesignChecker_CHECK_LRC=Enable
+INCL_DIRS=. ../.. ../../../../../matchlib/cmod/include ../../../../../matchlib/connections/include ../../../../../matchlib/rapidjson/include ./scverify . ../.. /cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/shared/include ../.. ../../../../../matchlib/cmod/include ../../../../../matchlib/connections/include ../../../../../matchlib/rapidjson/include
+MAKELEVEL=2
+SYNOPSYS_SIM_SETUP=./Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/synopsys_sim.setup
+DesignCompiler_AreaHierarchical=true
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/31286,unix/unix:/tmp/.ICE-unix/31286
+OSCI_GCOV=false
+SNPSLMD_LICENSE_FILE=27023@lablm.fas.harvard.edu
+Novas_NOVAS_NCSIM_VER=nc57_vhdl
+CDesignChecker_SOFT_RUNTIME_LIMIT=0
+NCSim_NCVLOG_OPTS=-linedebug
+CDesignChecker_FORMAL_RPT_FNAME=Design_Check
+DesignCompiler_TimingReportingMode=p2p
+QuestaSIM_VSIM_OPTS=-t ps
+CDesignChecker_TIME_LIMIT_INCREASE_FACTOR=2.0
+SCVerify_ENABLE_REPLAY_VERIFICATION=false
+QuestaSIM_QHOME=
+DesignCompiler_CompileOpts=
+SCVerify_ENABLE_STALL_TOGGLE=false
+CDesignChecker_CHECK_SUD=Enable
+FSDB_VCS_RD_SC_VALPTR_PROTECT=1
+VCS_COMP_FLAGS=-g -Wall -Wno-unknown-pragmas
+TOP_HDL_ENTITY=SysTop_rtl
+MFLAGS=-w
+CXX_VCO=aol
+DesignAnalyzer_lddDebug=false
+DesignCompiler_ImportantBits=
+NOVAS_LD_LIBRARY_PATH=/cad/tools/synopsys/verdi/O-2018.09-SP2-7/share/FsdbReader/Linux64:/cad/tools/synopsys/verdi/O-2018.09-SP2-7/share/FsdbReader/Linux:/cad/tools/synopsys/verdi/O-2018.09-SP2-7/share/FsdbWriter/Linux64:/cad/tools/synopsys/verdi/O-2018.09-SP2-7/share/FsdbWriter/Linux
+SCVerify_USE_VISTA=false
+VCS_VCSSIM_OPTS=
+NCSim_NCSC_OPTS=
+CDesignChecker_CHECK_OVL=Enable
+VCS_ENABLE_CODE_COVERAGE=false
+QuestaSIM_RADIX=hex
+XDG_CONFIG_DIRS=/etc/xdg
+DesignCompiler_WaitForSynLicense=
+SCVerify_LINK_LIBNAMES=
+DesignCompiler_CustomScriptDirPath=
+DesignCompiler_DontGetSynLicense=
+LINK_LIBNAMES=
+CDesignChecker_MAX_VIOLATIONS=20
+QuestaSIM_COVERCHECK_TCL=
+CCS_VCD_TIMES=0,ns,end,ns
+CDesignChecker_CHECK_FXD=Enable
+CDesignChecker_XTERM_CMD=xterm
+MAIL=/var/spool/mail/billyk
+VG_GNU_PACKAGE=/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/gnu/linux
+LowPower_CLOCK_GATING_MIN_WIDTH=0
+PATH=/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/gnu/linux/gcc-4.8.3_64-shared/bin:/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/gnu/linux/binutils-2.22_64/bin:/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin:/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/bin:/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/lib:/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/pkgs/sif/.lib:/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin:/cad/tools/synopsys/verdi/O-2018.09-SP2-7/bin:/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+DESKTOP_SESSION=xfce
+LowPower_DEBUG_LEVEL=0
+Novas_NOVAS_MSIM_PLI=modelsim_fli61
+LowPower_SLECPRO_QUEUELIC_LIMIT=0s
+Option_CppStandard=c++11
+CDesignChecker_PROPERTY_ISE=false
+CDesignChecker_CHECK_ISE=Enable
+NCSim_NC_ROOT=
+WORK_DIR=/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1
+SCVerify_TB_STACKSIZE=64000000
+CDesignChecker_SYMBOLIC_MEMSIZE_THRESHOLD=256
+CDesignChecker_CHECK_CNS=Enable
+VERDI_HOME=/cad/tools/synopsys/verdi/O-2018.09-SP2-7
+DesignCompiler_PhysicalLibrary=topo_design_mw
+LowPower_DEBUG=false
+Novas_NOVAS_NCSIM_LDV=ius_vhpi_latest
+CDesignChecker_ADD_WAVES=false
+LowPower_CG_OVERRIDE=
+OSCI_SYSTEMC_LIB=/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/shared/lib/$(CXX_OS)/$(CXX_TYPE)
+CDesignChecker_CHECK_ACC=Enable
+DEBUSSY_HOME=/cad/tools/synopsys/novas/2012.10
+NETLIST=v
+PWD=/home/billyk/cs148/hls/lab3/SysTop
+PRECISION_EXE=
+_LMFILES_=/cad/modulefiles/tools/accellera/systemc/2.3.1:/cad/modulefiles/licenses/mentor-graphics:/cad/modulefiles/licenses/synopsys:/cad/modulefiles/tools/catapult/10.4b-841621:/cad/modulefiles/tools/verdi/O-2018.09-SP2-7:/cad/modulefiles/tools/vcs-mx/L-2016.06-SP1-1:/home/billyk/cs148/catapult
+DesignCompiler_ShellExe=dc_shell
+VCS_VG_GNU_PACKAGE=/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/gnu/linux
+DesignCompiler_EnablePowerReporting=false
+VCS_HOME=/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1
+DesignCompiler_MWTechfile=
+NCSim_NCSIM_OPTS=
+CDesignChecker_CHECK_ABW=Enable
+RUN_CDESIGN_CHECKER=0
+COMPILER_FLAGS=HLS_ALGORITHMICC CONNECTIONS_ACCURATE_SIM SC_INCLUDE_DYNAMIC_PROCESSES
+NCSim_NCVHDL_OPTS=-v93 -linedebug
+LANG=en_US.UTF-8
+CDesignChecker_PROPERTY_CAS=false
+QuestaSIM_SYSC_VERSION=2.3
+DesignCompiler_TLU_min=
+DesignCompiler_ReportMapping=false
+SRC_PATH=../../../cmod/lab3
+LowPower_EFFORT_LEVEL=high
+VCS_FORCE_32BIT=
+Valgrind_VALGRIND=/usr/opt/bin/valgrind
+LowPower_INSERT_STB_S=true
+MODULEPATH=/cad/modulefiles
+LowPower_USE_SLECPRO_MAP_FILE=false
+LOADEDMODULES=tools/accellera/systemc/2.3.1:licenses/mentor-graphics:licenses/synopsys:tools/catapult/10.4b-841621:tools/verdi/O-2018.09-SP2-7:tools/vcs-mx/L-2016.06-SP1-1:catapult
+CDesignChecker_CHECK_PDD=Enable
+QuestaSIM_VCD_SIZE_LIMIT=2000
+VCS_ARCH_OVERRIDE=linux
+LowPower_GLOBAL_OPTIONS=
+LowPower_WIRELOAD_MODE=top
+MGC_EXENAME=catapult
+Novas_VERDI_VERSION=N-2017.12
+CDesignChecker_CHECK_ABR=Enable
+DesignCompiler_DesignCompilerMode=LibraryDefault
+DesignCompiler_itf2tech_map=
+SYSTEMC_HOME=/cad/tools/accellera/systemc-2.3.1
+SELINUX_LEVEL_REQUESTED=
+ROOT=../../..
+CDesignChecker_CHECK_MXS=Enable
+LowPower_WIRELOAD_MODEL=
+VCS_VHDLAN_OPTS=
+STAGE=rtl
+Valgrind_VALGRIND_OPTS=--demangle=yes --leak-check=no --undef-value-errors=yes
+SCVerify_AUTOWAIT=0
+CDesignChecker_CHECK_CWB=Enable
+SYN_DIR=gate_synthesis_dc
+Novas_NOVAS_NCSIM_PLI=ncsc57/lib-linux_gcc3_23
+DesignCompiler_SynthesisFlowType=asic
+QuestaSIM_ALLOW_DUP_SYMS=false
+LowPower_STB_C_EFFORT_LEVEL=high
+VCS_VLOGAN_OPTS=+v2k
+HISTCONTROL=ignoredups
+SCVerify_USE_VCS=true
+CDesignChecker_CHECK_AOB=Enable
+SHLVL=8
+SCVerify_MAX_ERROR_CNT=0
+DesignCompiler_Path=
+LowPower_CLOCK_TREE_FINAL_BUFFER_FANOUT=32
+VNCSESSION=1
+HOME=/home/billyk
+SCVerify_RESET_CYCLES=2
+VCS_LIC_QUEUE=false
+HLS_CATAPULT=1
+CDesignChecker_CHECK_UMR=Enable
+DesignCompiler_QueryPowerLicenseTimes=1
+QuestaSIM_SUPPRESS_WAVEFORMS=false
+QuestaSIM_VCOM_OPTS=
+MGC_HOME=/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home
+CDesignChecker_PROPERTY_ASC=false
+DesignCompiler_CompileEnableOutputInversion=true
+DesignCompiler_OutNetlistFormat=vhdl
+LowPower_NO_VECTORS=false
+CCS_SIM_MODE=batch
+CDesignChecker_CHECK_ACS=Enable
+NCSim_NCSIM_SAIF_OPTIONS=-verbose -overwrite -internal -hierarchy
+MGC_ENV_ORIG_MGC_HOME=/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home
+VCSMX_HOME=/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1
+SYSTEMC_DESIGN=1
+LOGNAME=billyk
+TARGET=scverify/concat_sim_rtl_v_vcs
+CDesignChecker_CHECK_OSL=Disable
+LowPower_OBS_EFFORT_LEVEL=high
+SCVerify_MAX_DEADLOCK_TIMER=0
+MGLS_LICENSE_FILE=1717@lablm.fas.harvard.edu
+QuestaSIM_Flags=
+QuestaSIM_ENABLE_VOPT=true
+OSCI_USE_32BIT_COMPILER=false
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-QdJBfLVN1s,guid=c018f706e96bc11bae7bdc155e49bc70
+DesignCompiler_FOLDERNAME=Design Compiler
+LowPower_INSERT_STB_C=true
+QuestaSIM_ENABLE_QWAVE=false
+SSH_CONNECTION=65.112.8.16 49154 10.243.23.23 22
+QuestaSIM_MSIM_DOFILE=
+VCS_VCS_DOFILE=
+XDG_DATA_DIRS=/usr/local/share:/usr/share
+LowPower_CLOCK_TREE_ROOT_BUFFER_FANOUT=8
+MODULESHOME=/usr/share/Modules
+LowPower_ENABLE_SLECPRO=disabled
+QuestaSIM_MSIM_AC_TYPES=true
+CDesignChecker_MAX_SIM_TRANS_COUNT=500
+SEARCH_PATH=../../../matchlib/cmod/include ../../../matchlib/connections/include ../../../matchlib/rapidjson/include
+CDesignChecker_PER_PROBLEM_TIME_LIMIT=1
+SCVerify_MSIM_DEBUG=false
+WORK2SOLN=.
+CDesignChecker_CHECK_STF=Enable
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+QuestaSIM_GATE_VSIM_OPTS=+notimingchecks -sdfnoerror -noglitch
+NCSim_GCC_HOME=
+ARCH=linux
+SCVerify_QUESTASIM_DEBUG=false
+QuestaSIM_DEF_MODELSIM_INI=
+SCVerify_OPTIMIZE_WRAPPERS=false
+DesignCompiler_GenerateGateSdf=true
+MGC_ENV_ORIG_PATH=/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin:/cad/tools/synopsys/verdi/O-2018.09-SP2-7/bin:/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+CDesignChecker_CHECK_CAS=Enable
+XDG_RUNTIME_DIR=/run/user/1027
+PROJ2WORK=./Catapult/SysTop.v1
+QuestaSIM_VOPT_ARGS=+acc=npr
+CDesignChecker_SIM_TIME_LIMIT=900
+CDesignChecker_TIME_LIMIT_INCREASE_DELTA=0
+DISPLAY=:27.0
+LowPower_STB_S_EFFORT_LEVEL=high
+SIMTOOL=vcs
+VCS_VCS_GCC_VER=4.2.2
+CDesignChecker_PROPERTY_DBZ=false
+GLADE_CATALOG_PATH=:
+VCS_SYSC_VERSION=2.3.1
+VCO=aol
+XDG_CURRENT_DESKTOP=XFCE
+SCVerify_USE_QUESTASIM=false
+TOP_NAME=SysTop
+VCS_VCS_HOME=/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1
+QuestaSIM_FORCE_32BIT=
+NCSim_NCSIM_DOFILE=
+MGC_ENV_ORIG_LD_LIBRARY_PATH=/cad/tools/accellera/systemc-2.3.1/lib-linux64
+SCVerify_IDLE_SYNCHRONIZATION_MODE=false
+SCVerify_DEADLOCK_DETECTION=true
+LowPower_STARTUP_SCRIPT_PATH=
+COLORTERM=truecolor
+SCVerify_USE_CCS_BLOCK=false
+BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`
+}
+_=./Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr
+LC_ALL=C
+VCS_PATHMAP_PRELOAD_DONE=1
+DVE_SIM_SELECT_LOOP=on
+Runtime command line arguments:
+argv[0]=./Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr
+argv[1]=-cm
+argv[2]=assert
+argv[3]=-ucli
+argv[4]=-ucli2Proc
+argv[5]=-i
+argv[6]=./Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/scverify_vcs_wave.tcl
+argv[7]=-l
+argv[8]=./Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sim.log
+376 profile - 100
+          CPU/Mem usage: 0.020 sys,  0.050 user,  245.69M sys,  0.00M vm
+377 VC callback profile - scalar:0 vector:0
+378 Fri Apr 17 23:41:52 2020
+379 pliAppInit
+380 *Novas* WARNING: Not support SystemC version for VCS 2016.6 SC 2.3. Disable SystemC dumping support.
+GCC=GNU C++ 4.8.3 -m64 -mtune=generic -march=x86-64 -g -O -fPIC
+
+381 pliAppMiscSet: New Sim Round
+382 LIBSSCORE=found /cad/tools/synopsys/novas/2012.10/share/PLI/VCS/LINUX64/libsscore_vcs201209.so through $LD_LIBRARY_PATH setting.
+383 Novas FSDB Dumper for VCS, Release 2012.10, Linux x86_64/64bit, 10/18/2012
+384 Copyright (C) 1996 - 2012 by SpringSoft, Inc.
+385 ***********************************************************************
+386 *  WARNING -                                                          *
+387 *  The simulator version is newer than the FSDB dumper version which  *
+388 *  may cause abnormal behavior. Please contact SpringSoft support at  *
+389 *  support@springsoft.com for assistance.                             *
+390 ***********************************************************************
+391 sps_tcl_fsdbDumpfile
+392 argv[0]: ./default.fsdb
+393 *Novas* : Create FSDB file './default.fsdb'
+394 sps_tcl_fsdbDumpSC
+395 argv[0]: 0
+396 *Novas* : Begin traversing the scopes, layer (0).
+397 *Novas* : End of traversing.
+398 fsdbDumpSC traverse var: profile - 
+          CPU/Mem usage: 0.040 sys,  1.110 user,  266.37M sys,  0.00M vm
+                   incr: 0.010 sys,  0.640 user,  4.71M sys,  0.00M vm
+                   accu: 0.010 sys,  0.640 user,  4.71M sys,  0.00M vm
+              accu incr: 0.010 sys,  0.640 user,  4.71M sys,  0.00M vm
+
+          Count usage: 32180 var,  11156 idcode,  11156 callback
+                 incr: 32180 var,  11156 idcode,  11156 callback
+                 accu: 32180 var,  11156 idcode,  11156 callback
+            accu incr: 32180 var,  11156 idcode,  11156 callback
+399 VC callback profile - scalar:0 vector:0
+400 Fri Apr 17 23:41:53 2020
+401 fsdbDumpSC: profile - 
+          CPU/Mem usage: 0.040 sys,  1.370 user,  267.61M sys,  0.00M vm
+                   incr: 0.000 sys,  0.260 user,  1.24M sys,  0.00M vm
+                   accu: 0.010 sys,  0.900 user,  5.94M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.260 user,  1.24M sys,  0.00M vm
+
+          Count usage: 32180 var,  11156 idcode,  11156 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 32180 var,  11156 idcode,  11156 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+402 VC callback profile - scalar:25186 vector:6994
+403 Fri Apr 17 23:41:53 2020
+404 sps_tcl_fsdbDumpvars
+405 argv[0]: 0
+406 argv[1]: my_testbench.top.ccs_rtl
+407 *Novas* ERROR: The #2 argument is invalid
+408 *Novas* ERROR: Syntax - fsdbDumpvars [depth] [instance] [option]*
+409 sps_tcl_fsdbDumpon
+410 *Novas* : fsdbDumpon - All FSDB files at 0 ps.
+411 sps_tcl_fsdbDumpoff
+412 *Novas* : fsdbDumpoff - All FSDB files at 1,011,500 ps.
+413 sps_tcl_fsdbDumpFinish
+414 *Novas* : Close all FSDB Files at 1,011,500 ps.
+415 End of simulation at 1011500
+416 VC callback profile - scalar:0 vector:0
+417 Fri Apr 17 23:41:54 2020
+418 SimExit
+419 Sim process exit

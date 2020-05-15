@@ -1,0 +1,9 @@
+timeres = 1 ps
+timeres_raw = 4
+timescale = 1 ps
+timescale_raw = 4
+VAR Timeres 1 ps
+VAR Timeres_raw 4
+VAR Timescale 1 ps
+VAR Timescale_raw 4
+cnt = 0

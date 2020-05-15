@@ -1,0 +1,3 @@
+MODELS_concat_sim_rtl_v_vcs = \
+	SysPE_rtl/SysPE_rtl \
+	sysc_sim \

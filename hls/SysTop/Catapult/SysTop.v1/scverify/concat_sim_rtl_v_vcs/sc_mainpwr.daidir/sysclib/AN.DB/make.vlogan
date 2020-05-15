@@ -1,0 +1,12 @@
+
+VLOGAN	= vlogan
+VLOGAN_OPT	= -full64 -q +v2k -work VCS_SYSC_LIB -xoutlib scverify/concat_sim_rtl_v_vcs/sc_mainpwr.daidir/sysclib/AN.DB
+
+all :		_VCSgd_WIXexc_1.db \
+
+
+
+_VCSgd_WIXexc_1.db :	scverify/concat_sim_rtl_v_vcs/sysc/scverifyconcat_sim_rtl_v_vcssc_mainpwr/top.v 
+		${VLOGAN}  ${VLOGAN_OPT} scverify/concat_sim_rtl_v_vcs/sysc/scverifyconcat_sim_rtl_v_vcssc_mainpwr/top.v
+
+

@@ -1,0 +1,12 @@
+
+VLOGAN	= vlogan
+VLOGAN_OPT	= -full64 +v2k
+
+all :		_VCSgd_ABH8Xd_1.db \
+
+
+
+_VCSgd_ABH8Xd_1.db :	concat_sim_rtl.v 
+		${VLOGAN}  ${VLOGAN_OPT} concat_sim_rtl.v
+
+

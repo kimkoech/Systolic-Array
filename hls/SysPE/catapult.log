@@ -1,0 +1,298 @@
+//  Catapult Ultra Synthesis 10.4b/841621 (Production Release) Thu Oct 24 17:20:07 PDT 2019
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2019, All Rights Reserved.
+//                        UNPUBLISHED, LICENSED SOFTWARE.
+//             CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//                 PROPERTY OF MENTOR GRAPHICS OR ITS LICENSORS
+//  
+//  Running on Linux billyk@cad.eecs.harvard.edu 3.10.0-1062.12.1.el7.x86_64 x86_64 aol
+//  
+//  Package information: SIFLIBS v23.4_2.0, HLS_PKGS v23.4_2.0, 
+//                       SIF_TOOLKITS v23.4_2.0, SIF_XILINX v23.4_2.0, 
+//                       SIF_ALTERA v23.4_2.0, CCS_LIBS v23.4_2.0, 
+//                       CDS_PPRO v10.3a_3, CDS_DesigChecker v10.4b, 
+//                       CDS_OASYS v19.1_2.4, CDS_PSR v19.1_1.16, 
+//                       DesignPad v2.78_1.0
+//  
+//  Start time Fri Apr 17 21:42:23 2020
+# -------------------------------------------------
+# Logging session transcript to file "/tmp/log40244702cce94.0"
+dofile ./go_vcs.tcl
+# > source Catapult.ccs
+# Moving session transcript to file "/home/billyk/cs148/hls/lab3/SysPE/catapult.log"
+# Warning: Could not read Encrypted Liberty technology library file 'sample_065nm.clib' specified in a catapult library, in the paths specified () (LIB-147)
+# Warning: Downstream flows that depend on a Encrypted Liberty file(s) will not be able to run. Please check option ComponentLibs/TechLibSearchPath. (LIB-191)
+# Warning: Could not read Liberty technology library file 'sample_065nm.lib' specified in a catapult library, in the paths specified () (LIB-147)
+# Warning: Downstream flows that depend on a Liberty file(s) will not be able to run. Please check option ComponentLibs/TechLibSearchPath. (LIB-191)
+# Warning: No LEF technology libraries have been specified (LIB-192)
+# Warning: No Process Technology File (PTF) technology libraries have been specified (LIB-192)
+# Warning: Could not read Synopsys DB technology library file 'sample_065nm.db' specified in a catapult library, in the paths specified () (LIB-147)
+# Warning: Downstream flows that depend on a Synopsys DB file(s) will not be able to run. Please check option ComponentLibs/TechLibSearchPath. (LIB-191)
+# Reading solution library '/home/billyk/cs148/hls/lab3/SysPE/Catapult/td_ccore_solutions/Connections__OutBlocking_SysPE__AccumType_Connections__SYN--_2c1d8b870a5e6780c1a757ef891031fc5be9_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/billyk/cs148/hls/lab3/SysPE/Catapult/td_ccore_solutions/Connections__OutBlocking_SysPE__InputType_Connections__SYN--_027f1954845d044556c8243937c776375bcb_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/billyk/cs148/hls/lab3/SysPE/Catapult/td_ccore_solutions/Connections__InBlocking_SysPE__AccumType_Connections__SYN_--_fcc000cdee2bdbaf1af8321dad3e708762fd_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/billyk/cs148/hls/lab3/SysPE/Catapult/td_ccore_solutions/Connections__OutBlocking_SysPE__InputType_Connections__SYN--_7961c91e828f28e6b31ea17763393cd662ff_0/solIndex.xml' ... (LIB-129)
+# Reading solution library '/home/billyk/cs148/hls/lab3/SysPE/Catapult/td_ccore_solutions/Connections__InBlocking_SysPE__InputType_Connections__SYN_--_3d75a24542f9bd72f21738470c667f036340_0/solIndex.xml' ... (LIB-129)
+# > echo "***RUN VCS ON CONCAT SIM ONLY***"
+# ***RUN VCS ON CONCAT SIM ONLY***
+# > flow run /SCVerify/launch_make ./scverify/Verify_concat_sim_rtl_v_vcs.mk SIMTOOL=vcs sim INVOKE_ARGS= CCS_VCD_FILE=./default.fsdb CCS_VCD_TIMES=0,ns,end,ns USE_FSDB=true
+# Making './scverify/Verify_concat_sim_rtl_v_vcs.mk SIMTOOL=vcs sim INVOKE_ARGS= CCS_VCD_FILE=./default.fsdb CCS_VCD_TIMES=0,ns,end,ns USE_FSDB=true'
+# Make utility invoked from '/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1'
+#     /cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/bin/make -f ./scverify/Verify_concat_sim_rtl_v_vcs.mk SIMTOOL=vcs INVOKE_ARGS= CCS_VCD_FILE=./default.fsdb CCS_VCD_TIMES=0,ns,end,ns USE_FSDB=true build < "/dev/null" (BASIC-15)
+# make[1]: Entering directory `/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1'
+# /cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/shared/include/mkfiles/ccs_vcs.mk:234: Warning: Applying the gcc option for the C++11 language standard
+# ============================================
+# Creating directory 'scverify/concat_sim_rtl_v_vcs'
+# mkdir -p scverify/concat_sim_rtl_v_vcs
+# mkdir -p scverify/concat_sim_rtl_v_vcs/sysc
+# ============================================
+# Setting up synopsys_sim.setup file
+# echo "WORK > DEFAULT" >>scverify/concat_sim_rtl_v_vcs/synopsys_sim.setup
+# echo "DEFAULT : scverify/concat_sim_rtl_v_vcs/work" >>scverify/concat_sim_rtl_v_vcs/synopsys_sim.setup
+# ============================================
+# Creating physical library 'scverify/concat_sim_rtl_v_vcs/work'
+# mkdir -p scverify/concat_sim_rtl_v_vcs/work
+# ============================================
+# Mapping logical library 'work' to physical path './scverify/concat_sim_rtl_v_vcs/work'
+# echo "work : ./scverify/concat_sim_rtl_v_vcs/work" >>scverify/concat_sim_rtl_v_vcs/synopsys_sim.setup
+# ============================================
+# Creating VCS-MX wave TCL file 'scverify/concat_sim_rtl_v_vcs/scverify_vcs_wave.tcl'
+# /cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/bin/tclsh8.5 /cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/pkgs/sif/userware/En_na/flows/app_vcs.flo create_vcs_wave ./Catapult/SysPE.v1/scverify/ccs_wave_signals.dat scverify/concat_sim_rtl_v_vcs/scverify_vcs_wave.tcl ./Catapult/SysPE.v1/.dut_inst_info.tcl  0
+# app_vcs.flo - Executing command 'create_vcs_wave ./Catapult/SysPE.v1/scverify/ccs_wave_signals.dat scverify/concat_sim_rtl_v_vcs/scverify_vcs_wave.tcl ./Catapult/SysPE.v1/.dut_inst_info.tcl 0'...
+# Wrote VCS waveform creation script to 'scverify/concat_sim_rtl_v_vcs/scverify_vcs_wave.tcl'
+# ============================================
+# Compiling VHDL file: /cad/tools/synopsys/novas/2012.10/share/PLI/VCS/LINUX64/novas.vhd
+# vhdlan -full64 -psl -verbose -work work   /cad/tools/synopsys/novas/2012.10/share/PLI/VCS/LINUX64/novas.vhd 
+#                      Synopsys 1076 VHDL Analyzer
+#                Version L-2016.06-SP1-1 -- Sep 27, 2016
+#               Copyright (c) 1991-2016 by Synopsys Inc.
+#                          ALL RIGHTS RESERVED
+# 
+# This program is proprietary and confidential information of Synopsys Inc.
+# and may be used and disclosed only as authorized in a license agreement
+# controlling such use and disclosure.
+# 
+#   NOTE: SYNOPSYS_SIM_SETUP=scverify/concat_sim_rtl_v_vcs/synopsys_sim.setup...
+#   Reading scverify/concat_sim_rtl_v_vcs/synopsys_sim.setup...
+# 
+# Parsing design file '/cad/tools/synopsys/novas/2012.10/share/PLI/VCS/LINUX64/novas.vhd'
+# 	Design Unit: PACKAGE DECLARATION: NOVAS
+# 	Semantic processing phase
+# 	Code generation phase
+# 	Writing intermediate file ./scverify/concat_sim_rtl_v_vcs/work/64/NOVAS.sim
+# 	Design Unit: PACKAGE BODY: NOVAS
+# 	Semantic processing phase
+# 	Code generation phase
+# 	Writing intermediate file ./scverify/concat_sim_rtl_v_vcs/work/64/NOVAS__.sim
+# 	Design Unit: PACKAGE DECLARATION: PKG
+# 	Semantic processing phase
+# 	Code generation phase
+# 	Writing intermediate file ./scverify/concat_sim_rtl_v_vcs/work/64/PKG.sim
+# 	Design Unit: PACKAGE BODY: PKG
+# 	Semantic processing phase
+# 	Code generation phase
+# 	Writing intermediate file ./scverify/concat_sim_rtl_v_vcs/work/64/PKG__.sim
+# ============================================
+# Compiling Verilog file: concat_sim_rtl.v
+# vlogan -full64 -psl -verbose  -Mdir=scverify/concat_sim_rtl_v_vcs -sysc=231 +v2k -sysc=231 -sc_model SysPE_rtl -sc_portmap ./scverify/dut_v_ports.map    concat_sim_rtl.v
+# vlogan  '-full64' '-psl' '-verbose' '-Mdir=scverify/concat_sim_rtl_v_vcs' '+v2k'  concat_sim_rtl.v 
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/bin/vcs1 -Mdir=scverify/concat_sim_rtl_v_vcs -Mcc=gcc -Mcplusplus=g++ -Masflags= -Mcfl= -pipe -O -I/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/include  -Mldflags=  -Mout=simv -Mamsrun="" -Mvcsaceobjs="" -Mobjects=" " -Msaverestoreobj= -Mcrt0= -Mcrtn="" -Mcsrc="" -Mdir=scverify/concat_sim_rtl_v_vcs -Msyslibs=-ldl  -Xvlogan=0x1 -full64 -psl +v2k concat_sim_rtl.v  
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin/vlogan: line 703: dc: command not found
+#                          Chronologic VCS (TM)
+#       Version L-2016.06-SP1-1_Full64 -- Fri Apr 17 21:42:35 2020
+#                Copyright (c) 1991-2016 by Synopsys Inc.
+#                          ALL RIGHTS RESERVED
+# 
+# This program is proprietary and confidential information of Synopsys Inc.
+# and may be used and disclosed only as authorized in a license agreement
+# controlling such use and disclosure.
+# 
+# Parsing design file 'concat_sim_rtl.v'
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin/vlogan: line 703: dc: command not found
+# syscan  -full64  -verilog_file -vlogan   -cpp g++ -sysc=231  -Mdir=scverify/concat_sim_rtl_v_vcs -cflags ""    concat_sim_rtl.v:SysPE_rtl  -V -port ./scverify/dut_v_ports.map  -vcs_args '-full64' '-psl' '-verbose' '-Mdir=scverify/concat_sim_rtl_v_vcs' '+v2k' 
+# 
+# Note-[SC-SYSCAN-USE-CPP] Using C++-compiler
+#   Using 'g++' C++-compiler for C++ compilation.
+# 
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/bin/verilog2vdef /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/concat_sim_rtl.v             -m SysPE_rtl             -o SysPE_rtl             -output_dir /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sysc/SysPE_rtl             -f /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/dut_v_ports.map             -osci                          -work DEFAULT -work_dir /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/work/AN.DB
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/bin/ifgen /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sysc/SysPE_rtl/SysPE_rtl.vdef             -output SysPE_rtl             -hdl_output  /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sysc/SysPE_rtl             -ccss_output /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sysc/SysPE_rtl             -sysc 231 	                 -direct -osci
+# ============================================
+# Compiling C++ file: scverify/sysc_sim.cpp
+# syscan -full64 -sysc=231 -Mdir=scverify/concat_sim_rtl_v_vcs -debug_all -cflags "-DCCS_DUT_RTL -DCCS_DUT_VERILOG -D_SYNTHESIS_ -DHLS_CATAPULT -DCONNECTIONS_ACCURATE_SIM -DSC_INCLUDE_DYNAMIC_PROCESSES -DSC_INCLUDE_DYNAMIC_PROCESSES -DCCS_SYSC -DSC_USE_STD_STRING -DTOP_HDL_ENTITY=SysPE_rtl -DDEADLOCK_DETECTION -std=gnu++11 -g -Wall -Wno-unknown-pragmas -I. -I../.. -I../../../../../matchlib/cmod/include -I../../../../../matchlib/connections/include -I../../../../../matchlib/rapidjson/include -I./scverify -I. -I../.. -I/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/shared/include -I../.. -I../../../../../matchlib/cmod/include -I../../../../../matchlib/connections/include -I../../../../../matchlib/rapidjson/include -I/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/include/systemc231 -I. -I../.. -I../../../../../matchlib/cmod/include -I../../../../../matchlib/connections/include -I../../../../../matchlib/rapidjson/include -I./scverify -I. -I../.. -I/cad/tools/mentor/catapult/Catapult_Synthesis_10.4
+# b-841621/Mgc_home/shared/include -I../.. -I../../../../../matchlib/cmod/include -I../../../../../matchlib/connections/include -I../../../../../matchlib/rapidjson/include -I/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/shared/include -I/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/pkgs/hls_pkgs/src -I/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/pkgs/siflibs -I/cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/pkgs/hls_pkgs/mgc_comps_src -DSC_USE_STD_STRING " scverify/sysc_sim.cpp
+# /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/sysc_sim.cpp: In constructor 'CCS_RTL::sysc_sim_wrapper::sysc_sim_wrapper(const sc_core::sc_module_name&)':
+# /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/sysc_sim.cpp:82:28: warning: 'CCS_RTL::sysc_sim_wrapper::ccs_rtl' will be initialized after [-Wreorder]
+#        HDL::ccs_DUT_wrapper ccs_rtl;
+#                             ^
+# /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/sysc_sim.cpp:48:29: warning:   'sc_core::sc_in<bool> CCS_RTL::sysc_sim_wrapper::clk' [-Wreorder]
+#        sc_core::sc_in<bool > clk;
+#                              ^
+# /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/sysc_sim.cpp:89:7: warning:   when initialized here [-Wreorder]
+#        sysc_sim_wrapper(
+#        ^
+# ============================================
+# Elaborating design
+# SYNOPSYS_SIM_SETUP: scverify/concat_sim_rtl_v_vcs/synopsys_sim.setup
+# vcs -full64 +libverbose -lca -psl -cm assert -debug -assert enable_diag  -Mdir=scverify/concat_sim_rtl_v_vcs -debug_all -timescale=1ps/1ps -sysc=blocksync -load libnovas.so:FSDBDumpCmd +vcsd +memcbk -sysc=231 sc_main -o scverify/concat_sim_rtl_v_vcs/sc_mainpwr -LDFLAGS "" -l scverify/concat_sim_rtl_v_vcs/elab.log
+# 
+# Warning-[LCA_FEATURES_ENABLED] Usage warning
+#   LCA features enabled by '-lca' argument on the command line.  For more 
+#   information regarding list of LCA features please refer to Chapter "LCA 
+#   features" in the VCS/VCS-MX Release Notes
+# 
+# Doing common elaboration 
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin/vcs: line 2465: dc: command not found
+#                          Chronologic VCS (TM)
+#       Version L-2016.06-SP1-1_Full64 -- Fri Apr 17 21:42:51 2020
+#                Copyright (c) 1991-2016 by Synopsys Inc.
+#                          ALL RIGHTS RESERVED
+# 
+# This program is proprietary and confidential information of Synopsys Inc.
+# and may be used and disclosed only as authorized in a license agreement
+# controlling such use and disclosure.
+# 
+# Top Level Modules:
+#        sYsTeMcToP
+# TimeScale is 1 ps / 1 ps
+# Starting vcs inline pass...
+# 1 unique modules to generate
+# recompiling module sYsTeMcToP
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin/vcs: line 2465: dc: command not found
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin/vcs: line 2465: dc: command not found
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin/vcs: line 2465: dc: command not found
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin/vcs: line 2465: dc: command not found
+# make[2]: Entering directory `/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs'
+# if [ -x /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr_elab ]; then chmod -x /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr_elab; fi
+# g++  -o /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr_elab  -Wl,-rpath,/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/gnu/linux/gcc-4.8.3_64-shared/lib64 -rdynamic -L/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/cosim/sysc231-gcc4 -L/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib -rdynamic -Wl,-E   -Wl,-whole-archive    /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvcsucli.so -Wl,-no-whole-archive  /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sysc/sysc_globals.o /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/ucli_sysc.o   objs/ivVCS_d.o amcQwB.o objs/amcQw_d.o    SIM_l.o      rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o     /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sysc/SysPE_rtl/SysPE_rtl.o /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sysc/sysc_sim.o /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.
+# v1/scverify/concat_sim_rtl_v_vcs/sysc/libconcat_sim_rtl_v_vcs_sysc_stubs.a    /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libzerosoft_rt_stubs.so /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/liberrorinf.so /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libsnpsmalloc.so -lsysctli -lbfSim -lbfCbug -lsystemc231-gcc4-64 /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvirsim.so     /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvcsnew.so /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvcsucli.so   /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libsimprofile.so /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libuclinative.so            /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/vcs_save_restore_new.o -ldl -lm  -lc -lpthread -ldl 
+# /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr_elab up to date
+# make[2]: Leaving directory `/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs'
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin/vcs: line 2465: dc: command not found
+# ================================
+# SETTING RANDOM SEED = 1587174176
+# ================================
+# 
+# Warning-[LCA_FEATURES_ENABLED] Usage warning
+#   LCA features enabled by '-lca' argument on the command line.  For more 
+#   information regarding list of LCA features please refer to Chapter "LCA 
+#   features" in the VCS/VCS-MX Release Notes
+# 
+# Doing common elaboration 
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin/vcs: line 2465: dc: command not found
+#                          Chronologic VCS (TM)
+#       Version L-2016.06-SP1-1_Full64 -- Fri Apr 17 21:43:00 2020
+#                Copyright (c) 1991-2016 by Synopsys Inc.
+#                          ALL RIGHTS RESERVED
+# 
+# This program is proprietary and confidential information of Synopsys Inc.
+# and may be used and disclosed only as authorized in a license agreement
+# controlling such use and disclosure.
+# 
+# Top Level Modules:
+#        sYsTeMcToP
+# TimeScale is 1 ps / 1 ps
+# Starting vcs inline pass...
+# 1 unique modules to generate
+# recompiling module sYsTeMcToP
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin/vcs: line 2465: dc: command not found
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin/vcs: line 2465: dc: command not found
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin/vcs: line 2465: dc: command not found
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin/vcs: line 2465: dc: command not found
+# make[2]: Entering directory `/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs'
+# if [ -x /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr ]; then chmod -x /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr; fi
+# g++  -o /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr  -Wl,-rpath,/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/gnu/linux/gcc-4.8.3_64-shared/lib64 -rdynamic -L/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/cosim/sysc231-gcc4 -L/cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib -rdynamic -Wl,-E   -Wl,-whole-archive    /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvcsucli.so -Wl,-no-whole-archive  /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sysc/sysc_globals.o /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/ucli_sysc.o   objs/ivVCS_d.o amcQwB.o objs/amcQw_d.o    SIM_l.o      rmapats_mop.o rmapats.o rmar.o  rmar_llvm_0_1.o rmar_llvm_0_0.o     /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sysc/SysPE_rtl/SysPE_rtl.o /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sysc/sysc_sim.o /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/sc
+# verify/concat_sim_rtl_v_vcs/sysc/libconcat_sim_rtl_v_vcs_sysc_stubs.a    /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libzerosoft_rt_stubs.so /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/liberrorinf.so /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libsnpsmalloc.so -lsysctli -lbfSim -lbfCbug -lsystemc231-gcc4-64 /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvirsim.so     /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvcsnew.so /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libvcsucli.so   /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libsimprofile.so /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libreader_common.so /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libBA.a /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/libuclinative.so            /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/linux64/lib/vcs_save_restore_new.o -ldl -lm  -lc -lpthread -ldl 
+# /home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr up to date
+# make[2]: Leaving directory `/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs'
+# /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/bin/vcs: line 2465: dc: command not found
+# make[1]: Leaving directory `/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1'
+#     /cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/bin/make -f ./scverify/Verify_concat_sim_rtl_v_vcs.mk SIMTOOL=vcs sim INVOKE_ARGS= CCS_VCD_FILE=./default.fsdb CCS_VCD_TIMES=0,ns,end,ns USE_FSDB=true (BASIC-14)
+# make[1]: Entering directory `/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1'
+# Warning: /cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home/shared/include/mkfiles/ccs_vcs.mk:234: Warning: Applying the gcc option for the C++11 language standard
+# ============================================
+# Simulating design entity: sc_main to produce Switching Activity File: ./default.fsdb
+# SYNOPSYS_SIM_SETUP: ./Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/synopsys_sim.setup
+# cd ../..; ./Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr -systemcrun   -verilogrun -cm assert  -ucli -ucli2Proc -i ./Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/scverify_vcs_wave.tcl -l ./Catapult/SysPE.v1/scverify/concat_sim_rtl_v_vcs/sim.log
+# ================================
+# SETTING RANDOM SEED = 1587174184
+# ================================
+# Chronologic VCS simulator copyright 1991-2016
+# Contains Synopsys proprietary information.
+# Compiler version L-2016.06-SP1-1_Full64; Runtime version L-2016.06-SP1-1_Full64;  Apr 17 21:43 2020
+# *Novas* Loading libsscore_vcs201209.so
+# Warning: *Novas* WARNING: Not support SystemC version for VCS 2016.6 SC 2.3. Disable SystemC dumping support.
+# GCC=GNU C++ 4.8.3 -m64 -mtune=generic -march=x86-64 -g -O -fPIC
+# ucli% # Source static function file
+# ucli% global env
+# ucli% # Source the common TCL file (that also reads the wave database file)
+# ucli% source $env(MGC_HOME)/pkgs/sif/userware/En_na/flows/vcs_funcs.tcl
+# ucli% read_ccs_wave ./Catapult/SysPE.v1/scverify/ccs_wave_signals.dat
+# Reading SCVerify waveform database './Catapult/SysPE.v1/scverify/ccs_wave_signals.dat'
+# ucli% setup_vcd_file ./Catapult/SysPE.v1/.dut_inst_info.tcl
+# DUT Instance Path = my_testbench.PE.ccs_rtl
+# Preparing to write FSDB file ./default.fsdb...
+# ucli% populate_wave_window
+# ucli% if { ("0" != {}) && [file exists "0"] } {
+#    source "0"
+# }
+# ucli% # If not running in GUI mode, run the entire simulation
+# ucli% if { ![gui_is_active] } {
+#    do_simulation_run
+# }
+# Running up to VCD start time: '0 ns'
+# run 0 ns
+# top.v, 35 : (*vcs_systemc_2,vcs_systemc_skel*) module sYsTeMcToP;
+# Turning FSDB on
+# Novas FSDB Dumper for VCS, Release 2012.10, Linux x86_64/64bit, 10/18/2012
+# Copyright (C) 1996 - 2012 by SpringSoft, Inc.
+# ***********************************************************************
+# Warning: -                                                          *
+# *  The simulator version is newer than the FSDB dumper version which  *
+# *  may cause abnormal behavior. Please contact SpringSoft support at  *
+# *  support@springsoft.com for assistance.                             *
+# ***********************************************************************
+# *Novas* : Create FSDB file './default.fsdb'
+# *Novas* : Begin traversing the scopes, layer (0).
+# *Novas* : End of traversing.
+# fsdbDumpvars 0 my_testbench.PE.ccs_rtl
+# Error: *Novas* ERROR: The #2 argument is invalid
+# Error: *Novas* ERROR: Syntax - fsdbDumpvars [depth] [instance] [option]*
+# *Novas* : fsdbDumpon - All FSDB files at 0 ps.
+# Continuing to VCD end time: 'end'
+# run -all
+# @10500 ps Asserting Reset 
+# @11500 ps Deasserting Reset 
+# 33 ns: Received Output Weight: 	 10
+# 34 ns: Received Output Activation: 	 0	| Reference 	0
+# 34 ns: Received Accumulated Output:	 0	| Reference 	0
+# 35 ns: Received Output Activation: 	 -1	| Reference 	-1
+# 35 ns: Received Accumulated Output:	 -20	| Reference 	-20
+# 36 ns: Received Output Activation: 	 3	| Reference 	3
+# 36 ns: Received Accumulated Output:	 60	| Reference 	60
+# 37 ns: Received Output Activation: 	 -7	| Reference 	-7
+# 37 ns: Received Accumulated Output:	 -140	| Reference 	-140
+# 38 ns: Received Output Activation: 	 15	| Reference 	15
+# 38 ns: Received Accumulated Output:	 300	| Reference 	300
+# 39 ns: Received Output Activation: 	 -31	| Reference 	-31
+# 39 ns: Received Accumulated Output:	 -620	| Reference 	-620
+# 40 ns: Received Output Activation: 	 63	| Reference 	63
+# 40 ns: Received Accumulated Output:	 1260	| Reference 	1260
+# 41 ns: Received Output Activation: 	 -127	| Reference 	-127
+# 41 ns: Received Accumulated Output:	 -2540	| Reference 	-2540
+# Implementation Correct :)
+# @10011500 ps Stop 
+# 
+# Info: SystemC: Simulation stopped by user.
+# Simulation complete, time is 10011500 ps.
+# top.v, 35 : (*vcs_systemc_2,vcs_systemc_skel*) module sYsTeMcToP;
+# Turning FSDB off and flushing
+# *Novas* : fsdbDumpoff - All FSDB files at 10,011,500 ps.
+# *Novas* : Close all FSDB Files at 10,011,500 ps.
+# Completed writing FSDB file ./default.fsdb...
+#            V C S   S i m u l a t i o n   R e p o r t 
+# Time: 10011500 ps
+# CPU Time:      0.360 seconds;       Data structure size:   0.0Mb
+# Fri Apr 17 21:43:05 2020
+# make[1]: Leaving directory `/home/billyk/cs148/hls/lab3/SysPE/Catapult/SysPE.v1'
+# > exit
+// Finish time Fri Apr 17 21:43:06 2020, time elapsed 0:43, peak memory 891.08MB, exit status 0

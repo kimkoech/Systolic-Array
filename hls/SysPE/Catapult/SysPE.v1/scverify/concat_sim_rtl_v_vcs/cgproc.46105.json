@@ -1,0 +1,27 @@
+{
+    "ObjArchives": [],
+    "Modules": {
+        "...MASTER...": {},
+        "sYsTeMcToP": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mode": 4,
+            "mod": "...MASTER...",
+            "out": "objs/amcQw_d.o",
+            "bytes": 7594,
+            "checksum": 0
+        },
+        "ivVCS_d": {
+            "mode": 4,
+            "mod": "sYsTeMcToP",
+            "out": "objs/ivVCS_d.o",
+            "bytes": 158858,
+            "checksum": 0
+        }
+    },
+    "reusePaths": {}
+}

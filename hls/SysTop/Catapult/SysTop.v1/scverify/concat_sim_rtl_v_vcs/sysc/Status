@@ -1,0 +1,65 @@
+INTERFACE type none
+TABFILE sysc/SysTop_rtl/SysTop_rtl.tab
+module SYSTEMC VERILOG SysTop_rtl /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/concat_sim_rtl.v IF=none
+ANA vcs_target_arch 64
+VAR sysc_on_top 1
+VAR adjust_time 0
+VAR sysc_timeres 
+VAR immediate_elab 1
+VAR sysc_version 231
+VAR donut 0
+VAR new_sync 0
+VAR sysc_skeleton 0
+VAR sysc_show_sc_main 0
+VAR compiler_prefix gcc4
+VAR mlib 
+VAR mdir scverify/concat_sim_rtl_v_vcs
+VAR top_module_name sYsTeMcToP
+VAR sysc_top scverify/concat_sim_rtl_v_vcs/sysc/scverifyconcat_sim_rtl_v_vcssc_mainpwr
+VAR vcs_image 1
+VAR uni_elab_flow 1
+VAR output scverifyconcat_sim_rtl_v_vcssc_mainpwr
+VAR sysc_uni_top scverify/concat_sim_rtl_v_vcs/sysc/scverifyconcat_sim_rtl_v_vcssc_mainpwr
+VAR sysc_slave 
+VAR sysc_processsave 0
+VAR sysc_multi_start 1
+VAR arch linux64
+VAR pwd /home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1
+VAR cpp g++
+VAR shared 
+VAR dep_lib 
+VAR nodep 
+VAR sysc_uni_phase 3
+VAR sysc_mode 64
+VAR sysc_timeres_set 1
+VAR sysc_dpi_list 
+VAR sysc_uni_only 0
+VAR sysc_q_flag 0
+VAR sdf_annotate 
+VAR sysc_sim_slave 0
+VAR sysc_cpp /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/gnu/linux/gcc-4.8.3_64-shared/bin/g++
+VAR sysc_as /cad/tools/synopsys/vcs-mx/L-2016.06-SP1-1/gnu/linux/binutils-2.22_64/bin/as
+VAR sysc_uni_stubs_file 
+VAR sysc_innovator 0
+VAR sysc_debug 4
+VAR sysc_inout_opt_if 0
+VAR sysc_tli_f_cpp_stubs_file 
+VAR sysc_uni_test 0
+VAR sysc_uni_use_scv 0
+VAR sysc_uni_scv_version 1.0p2
+VAR sysc_link_shared 0
+VAR sysc_gcc_version 4.8.3
+VAR sysc_output scverify/concat_sim_rtl_v_vcs/sc_mainpwr
+VAR sysc_uni_multi_top 0
+VAR sysc_purify 0
+VAR sysc_dlp_active 0
+VAR sysc_inout_found 0
+VAR sysc_tlm2_found 0
+VAR sysc_cflags 
+VAR sysc_src_files_or_top sc_main 
+VAR sysc_uni_top_found 0
+VAR sysc_has_pli 1
+VAR sysc_has_dpi 0
+VAR sysc_has_dpi_sc2vlog 0
+VAR sysc_has_opt 0
+VAR sysc_debug_option -debug_all

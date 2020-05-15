@@ -1,0 +1,89 @@
+{
+    "CurCompileUdps": {},
+    "MlibObjs": {},
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "sYsTeMcToP",
+        "sYsTeMcToP"
+    ],
+    "PrevCompiledModules": {},
+    "NameTable": {
+        "sYsTeMcToP": [
+            "sYsTeMcToP",
+            "ivVCS",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "CompileStrategy": "fullobj",
+    "Misc": {
+        "csrc": "scverify/concat_sim_rtl_v_vcs",
+        "cwd": "/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1",
+        "csrc_abs": "/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs",
+        "default_output_dir": "scverify/concat_sim_rtl_v_vcs",
+        "daidir": "/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr_elab.daidir",
+        "daidir_abs": "/home/billyk/cs148/hls/lab3/SysTop/Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr_elab.daidir",
+        "archive_dir": "archive.0"
+    },
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_stime_sec": 0.052127,
+            "ru_utime_sec": 0.069168999999999994,
+            "ru_maxrss_kb": 77368,
+            "ru_minflt": 17736,
+            "ru_majflt": 0,
+            "ru_nivcsw": 5,
+            "ru_nvcsw": 436
+        },
+        "ru_childs_end": {
+            "ru_stime_sec": 0.045940000000000002,
+            "ru_utime_sec": 0.026450000000000001,
+            "ru_maxrss_kb": 38028,
+            "ru_minflt": 10634,
+            "ru_majflt": 0,
+            "ru_nivcsw": 22,
+            "ru_nvcsw": 118
+        },
+        "ru_childs_cgstart": {
+            "ru_stime_sec": 0.012836999999999999,
+            "ru_utime_sec": 0.002281,
+            "ru_maxrss_kb": 24396,
+            "ru_minflt": 2258,
+            "ru_majflt": 0,
+            "ru_nivcsw": 8,
+            "ru_nvcsw": 23
+        },
+        "nMops": 0,
+        "ru_self_end": {
+            "ru_stime_sec": 0.066427,
+            "ru_utime_sec": 0.074358999999999995,
+            "ru_maxrss_kb": 80360,
+            "ru_minflt": 18830,
+            "ru_majflt": 0,
+            "ru_nivcsw": 5,
+            "ru_nvcsw": 559
+        },
+        "nQuads": 0,
+        "totalObjSize": 105181,
+        "Frontend(%)": 93.020347234363015,
+        "CodeGen(%)": 6.9796527656369785,
+        "peak_mem_kb": 300440
+    },
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 91377
+    },
+    "LVLData": [
+        "SIM"
+    ],
+    "PEModules": [],
+    "CompileProcesses": [
+        "cgproc.37970.json"
+    ],
+    "CompileStatus": "Successful"
+}

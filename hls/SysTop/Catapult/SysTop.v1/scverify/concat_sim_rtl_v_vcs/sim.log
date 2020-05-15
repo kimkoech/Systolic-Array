@@ -1,0 +1,138 @@
+Command: ./Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sc_mainpwr -systemcrun -verilogrun -cm assert -ucli -ucli2Proc -i ./Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/scverify_vcs_wave.tcl -l ./Catapult/SysTop.v1/scverify/concat_sim_rtl_v_vcs/sim.log
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06-SP1-1_Full64; Runtime version L-2016.06-SP1-1_Full64;  Apr 17 23:41 2020
+*Novas* Loading libsscore_vcs201209.so
+*Novas* WARNING: Not support SystemC version for VCS 2016.6 SC 2.3. Disable SystemC dumping support.
+GCC=GNU C++ 4.8.3 -m64 -mtune=generic -march=x86-64 -g -O -fPIC
+ucli% # Source static function file
+ucli% global env
+ucli% # Source the common TCL file (that also reads the wave database file)
+ucli% source $env(MGC_HOME)/pkgs/sif/userware/En_na/flows/vcs_funcs.tcl
+ucli% read_ccs_wave ./Catapult/SysTop.v1/scverify/ccs_wave_signals.dat
+Reading SCVerify waveform database './Catapult/SysTop.v1/scverify/ccs_wave_signals.dat'
+ucli% setup_vcd_file ./Catapult/SysTop.v1/.dut_inst_info.tcl
+DUT Instance Path = my_testbench.top.ccs_rtl
+Preparing to write FSDB file ./default.fsdb...
+ucli% populate_wave_window
+ucli% if { ("0" != {}) && [file exists "0"] } {
+   source "0"
+}
+ucli% # If not running in GUI mode, run the entire simulation
+ucli% if { ![gui_is_active] } {
+   do_simulation_run
+}
+Running up to VCD start time: '0 ns'
+run 0 ns
+top.v, 73 : (*vcs_systemc_2,vcs_systemc_skel*) module sYsTeMcToP;
+Turning FSDB on
+Novas FSDB Dumper for VCS, Release 2012.10, Linux x86_64/64bit, 10/18/2012
+Copyright (C) 1996 - 2012 by SpringSoft, Inc.
+***********************************************************************
+*  WARNING -                                                          *
+*  The simulator version is newer than the FSDB dumper version which  *
+*  may cause abnormal behavior. Please contact SpringSoft support at  *
+*  support@springsoft.com for assistance.                             *
+***********************************************************************
+*Novas* : Create FSDB file './default.fsdb'
+*Novas* : Begin traversing the scopes, layer (0).
+*Novas* : End of traversing.
+fsdbDumpvars 0 my_testbench.top.ccs_rtl
+*Novas* ERROR: The #2 argument is invalid
+*Novas* ERROR: Syntax - fsdbDumpvars [depth] [instance] [option]*
+*Novas* : fsdbDumpon - All FSDB files at 0 ps.
+Continuing to VCD end time: 'end'
+run -all
+@10500 ps Asserting Reset 
+@11500 ps Deasserting Reset 
+111 ns my_testbench.src: Start Loading Weight Matrix
+118 ns my_testbench.src: Finish Loading Weight Matrix
+119 ns my_testbench.src: Start Sending Input Matrix
+142 ns my_testbench.src: Finish Sending Input Matrix
+143 ns my_testbench.src: Start Computation
+166 ns my_testbench.sink accum_out_vec: 	26083	-	-	-	-	-	-	-	
+167 ns my_testbench.sink accum_out_vec: 	-	-12397	-	-	-	-	-	-	
+168 ns my_testbench.sink accum_out_vec: 	-14108	-	-16418	-	-	-	-	-	
+169 ns my_testbench.sink accum_out_vec: 	-	11872	-	32628	-	-	-	-	
+170 ns my_testbench.sink accum_out_vec: 	-7665	-	-8498	-	20104	-	-	-	
+171 ns my_testbench.sink accum_out_vec: 	-	-17941	-	-3642	-	12743	-	-	
+172 ns my_testbench.sink accum_out_vec: 	14287	-	-460	-	1668	-	29081	-	
+173 ns my_testbench.sink accum_out_vec: 	-	-22789	-	-1268	-	4695	-	10949	
+174 ns my_testbench.sink accum_out_vec: 	-36460	-	2439	-	-9396	-	-3583	-	
+175 ns my_testbench.sink accum_out_vec: 	-	7352	-	14656	-	11426	-	7833	
+176 ns my_testbench.sink accum_out_vec: 	16047	-	-124	-	2265	-	13761	-	
+177 ns my_testbench.sink accum_out_vec: 	-	-6645	-	-32431	-	25152	-	12977	
+178 ns my_testbench.sink accum_out_vec: 	-2162	-	20725	-	-13356	-	17441	-	
+179 ns my_testbench.sink accum_out_vec: 	-	-35640	-	14329	-	-9973	-	6812	
+180 ns my_testbench.sink accum_out_vec: 	16734	-	-4406	-	-7057	-	-23008	-	
+181 ns my_testbench.sink accum_out_vec: 	-	18590	-	16466	-	-7710	-	4827	
+182 ns my_testbench.sink accum_out_vec: 	10261	-	628	-	26974	-	5357	-	
+183 ns my_testbench.sink accum_out_vec: 	-	5111	-	9326	-	37339	-	-8328	
+184 ns my_testbench.sink accum_out_vec: 	-23565	-	-18660	-	4688	-	14636	-	
+185 ns my_testbench.sink accum_out_vec: 	-	14131	-	19973	-	-14144	-	10811	
+186 ns my_testbench.sink accum_out_vec: 	9463	-	-20122	-	19904	-	-730	-	
+187 ns my_testbench.sink accum_out_vec: 	-	-22967	-	-19339	-	-2380	-	-12764	
+188 ns my_testbench.sink accum_out_vec: 	20371	-	1343	-	10215	-	22967	-	
+189 ns my_testbench.sink accum_out_vec: 	-	-18283	-	15679	-	-5388	-	4330	
+190 ns my_testbench.sink accum_out_vec: 	-5672	-	32011	-	10367	-	-19729	-	
+191 ns my_testbench.sink accum_out_vec: 	-	-3474	-	11089	-	27951	-	3110	
+192 ns my_testbench.sink accum_out_vec: 	-21569	-	6102	-	-8218	-	11872	-	
+193 ns my_testbench.sink accum_out_vec: 	-	-19385	-	729	-	-10883	-	7767	
+194 ns my_testbench.sink accum_out_vec: 	6978	-	8708	-	22224	-	11844	-	
+195 ns my_testbench.sink accum_out_vec: 	-	2032	-	-10359	-	-6137	-	-20020	
+196 ns my_testbench.sink accum_out_vec: 	9449	-	-4754	-	-272	-	-16435	-	
+197 ns my_testbench.sink accum_out_vec: 	-	1269	-	5876	-	585	-	-12048	
+198 ns my_testbench.sink accum_out_vec: 	5911	-	-9993	-	19323	-	968	-	
+199 ns my_testbench.sink accum_out_vec: 	-	-3573	-	9048	-	-8046	-	2449	
+200 ns my_testbench.sink accum_out_vec: 	1778	-	7347	-	2232	-	-3190	-	
+201 ns my_testbench.sink accum_out_vec: 	-	-1960	-	1030	-	17811	-	-10379	
+202 ns my_testbench.sink accum_out_vec: 	11320	-	18832	-	13122	-	16957	-	
+203 ns my_testbench.sink accum_out_vec: 	-	8350	-	-4090	-	-16840	-	3620	
+204 ns my_testbench.sink accum_out_vec: 	14070	-	13297	-	-9662	-	-5099	-	
+205 ns my_testbench.sink accum_out_vec: 	-	23806	-	2742	-	-21763	-	-15531	
+206 ns my_testbench.sink accum_out_vec: 	-12553	-	18088	-	-11066	-	3888	-	
+207 ns my_testbench.sink accum_out_vec: 	-	-1913	-	-9077	-	-11947	-	-16068	
+208 ns my_testbench.sink accum_out_vec: 	-6991	-	-13946	-	-15032	-	-4431	-	
+209 ns my_testbench.sink accum_out_vec: 	-	-10825	-	-3873	-	-18768	-	-9719	
+210 ns my_testbench.sink accum_out_vec: 	-7553	-	-20707	-	-3107	-	-37739	-	
+211 ns my_testbench.sink accum_out_vec: 	-	-11151	-	6393	-	13416	-	-14262	
+212 ns my_testbench.sink accum_out_vec: 	2314	-	2010	-	14976	-	2497	-	
+213 ns my_testbench.sink accum_out_vec: 	-	3400	-	-3331	-	29630	-	18484	
+214 ns my_testbench.sink accum_out_vec: 	-	-	1256	-	-7098	-	18581	-	
+215 ns my_testbench.sink accum_out_vec: 	-	-	-	8198	-	8089	-	14762	
+216 ns my_testbench.sink accum_out_vec: 	-	-	-	-	22930	-	2265	-	
+217 ns my_testbench.sink accum_out_vec: 	-	-	-	-	-	-13507	-	10825	
+218 ns my_testbench.sink accum_out_vec: 	-	-	-	-	-	-	2061	-	
+219 ns my_testbench.sink accum_out_vec: 	-	-	-	-	-	-	-	-15110	
+@1011500 ps Stop 
+Check Output Count
+Implementation Correct :)
+
+Info: SystemC: Simulation stopped by user.
+CMODEL PASS
+"concat_sim_rtl.v", 6818: sYsTeMcToP.\my_testbench.top .ccs_rtl.is_inst.InputSetup_ReadRspRun_inst.InputSetup_ReadRspRun_connections_h_ln2309_assert_0_and_Unreachablevirtualfunctioninabstractclassnot: Antecedent of the implication never satisfied.
+"concat_sim_rtl.v", 6823: sYsTeMcToP.\my_testbench.top .ccs_rtl.is_inst.InputSetup_ReadRspRun_inst.InputSetup_ReadRspRun_connections_h_ln2309_assert_0_and_Unreachablevirtualfunctioninabstractclassnot_1: Antecedent of the implication never satisfied.
+"concat_sim_rtl.v", 6828: sYsTeMcToP.\my_testbench.top .ccs_rtl.is_inst.InputSetup_ReadRspRun_inst.InputSetup_ReadRspRun_connections_h_ln2309_assert_0_and_Unreachablevirtualfunctioninabstractclassnot_2: Antecedent of the implication never satisfied.
+"concat_sim_rtl.v", 6833: sYsTeMcToP.\my_testbench.top .ccs_rtl.is_inst.InputSetup_ReadRspRun_inst.InputSetup_ReadRspRun_connections_h_ln2309_assert_0_and_Unreachablevirtualfunctioninabstractclassnot_3: Antecedent of the implication never satisfied.
+"concat_sim_rtl.v", 6838: sYsTeMcToP.\my_testbench.top .ccs_rtl.is_inst.InputSetup_ReadRspRun_inst.InputSetup_ReadRspRun_connections_h_ln2309_assert_0_and_Unreachablevirtualfunctioninabstractclassnot_4: Antecedent of the implication never satisfied.
+"concat_sim_rtl.v", 6843: sYsTeMcToP.\my_testbench.top .ccs_rtl.is_inst.InputSetup_ReadRspRun_inst.InputSetup_ReadRspRun_connections_h_ln2309_assert_0_and_Unreachablevirtualfunctioninabstractclassnot_5: Antecedent of the implication never satisfied.
+"concat_sim_rtl.v", 6848: sYsTeMcToP.\my_testbench.top .ccs_rtl.is_inst.InputSetup_ReadRspRun_inst.InputSetup_ReadRspRun_connections_h_ln2309_assert_0_and_Unreachablevirtualfunctioninabstractclassnot_6: Antecedent of the implication never satisfied.
+"concat_sim_rtl.v", 6853: sYsTeMcToP.\my_testbench.top .ccs_rtl.is_inst.InputSetup_ReadRspRun_inst.InputSetup_ReadRspRun_connections_h_ln2309_assert_0_and_Unreachablevirtualfunctioninabstractclassnot_7: Antecedent of the implication never satisfied.
+"concat_sim_rtl.v", 4816: sYsTeMcToP.\my_testbench.top .ccs_rtl.sa_inst.SysArray_AccumInRun_inst.SysArray_AccumInRun_connections_h_ln3314_assert_0_and_Unreachablevirtualfunctioninabstractclassnot: Antecedent of the implication never satisfied.
+"concat_sim_rtl.v", 4821: sYsTeMcToP.\my_testbench.top .ccs_rtl.sa_inst.SysArray_AccumInRun_inst.SysArray_AccumInRun_connections_h_ln3314_assert_0_and_Unreachablevirtualfunctioninabstractclassnot_1: Antecedent of the implication never satisfied.
+"concat_sim_rtl.v", 4826: sYsTeMcToP.\my_testbench.top .ccs_rtl.sa_inst.SysArray_AccumInRun_inst.SysArray_AccumInRun_connections_h_ln3314_assert_0_and_Unreachablevirtualfunctioninabstractclassnot_2: Antecedent of the implication never satisfied.
+"concat_sim_rtl.v", 4831: sYsTeMcToP.\my_testbench.top .ccs_rtl.sa_inst.SysArray_AccumInRun_inst.SysArray_AccumInRun_connections_h_ln3314_assert_0_and_Unreachablevirtualfunctioninabstractclassnot_3: Antecedent of the implication never satisfied.
+"concat_sim_rtl.v", 4836: sYsTeMcToP.\my_testbench.top .ccs_rtl.sa_inst.SysArray_AccumInRun_inst.SysArray_AccumInRun_connections_h_ln3314_assert_0_and_Unreachablevirtualfunctioninabstractclassnot_4: Antecedent of the implication never satisfied.
+"concat_sim_rtl.v", 4841: sYsTeMcToP.\my_testbench.top .ccs_rtl.sa_inst.SysArray_AccumInRun_inst.SysArray_AccumInRun_connections_h_ln3314_assert_0_and_Unreachablevirtualfunctioninabstractclassnot_5: Antecedent of the implication never satisfied.
+"concat_sim_rtl.v", 4846: sYsTeMcToP.\my_testbench.top .ccs_rtl.sa_inst.SysArray_AccumInRun_inst.SysArray_AccumInRun_connections_h_ln3314_assert_0_and_Unreachablevirtualfunctioninabstractclassnot_6: Antecedent of the implication never satisfied.
+"concat_sim_rtl.v", 4851: sYsTeMcToP.\my_testbench.top .ccs_rtl.sa_inst.SysArray_AccumInRun_inst.SysArray_AccumInRun_connections_h_ln3314_assert_0_and_Unreachablevirtualfunctioninabstractclassnot_7: Antecedent of the implication never satisfied.
+Simulation complete, time is 1011500 ps.
+top.v, 73 : (*vcs_systemc_2,vcs_systemc_skel*) module sYsTeMcToP;
+Turning FSDB off and flushing
+*Novas* : fsdbDumpoff - All FSDB files at 1,011,500 ps.
+*Novas* : Close all FSDB Files at 1,011,500 ps.
+Completed writing FSDB file ./default.fsdb...
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1011500 ps
+CPU Time:      2.060 seconds;       Data structure size:   9.0Mb
+Fri Apr 17 23:41:54 2020

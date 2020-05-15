@@ -1,0 +1,197 @@
+## HLS DC synthesis script
+## Generated for stage extract
+
+# change the following to turn off/on timing reporting
+set enable_timing_reporting true
+
+puts "-- Note: Design Compiler Started"
+
+set enable_page_mode "false"
+set timing_input_port_default_clock true
+
+if { [file isdirectory "gate_synthesis_dc"] } {
+  puts "Note: Removing old directory gate_synthesis_dc"
+  file delete -force -- "gate_synthesis_dc"
+}
+puts "Note: Creating directory gate_synthesis_dc"
+file mkdir "gate_synthesis_dc"
+cd "gate_synthesis_dc"
+
+set hdlin_while_loop_iterations 1000
+## Set the variable for file path prefixing 
+set RTL_TOOL_SCRIPT_DIR /home/billyk/.catapult/Cache/10_4b_841621/ModularIO/15885300947641a9c4.4/.
+set RTL_TOOL_SCRIPT_DIR [file dirname [file normalize [info script]]]
+puts "-- RTL_TOOL_SCRIPT_DIR is set to '$RTL_TOOL_SCRIPT_DIR' "
+set MGC_HOME /cad/tools/mentor/catapult/Catapult_Synthesis_10.4b-841621/Mgc_home
+
+## Initialize DC-HLS variables
+set hls_status 0
+
+proc run_cmd { cmd errstr } {
+  upvar hls_status hls_status
+  puts $cmd
+  set retVal {}
+  if { !$hls_status } {
+    if { [catch { set retVal [uplevel 1 [list eval $cmd] ] } ] } {
+      puts "Error: Unable to $errstr."
+      set hls_status 1
+    }
+  } else {
+    puts "Error: $errstr skipped due to previous errors."
+  }
+  set retVal
+}
+
+# Source custom DesignCompiler script for specified stage
+# stage is one of: initial analyze synthesis reports final
+proc source_custom_script { stage } {
+   global env
+   if { [info exists env(DesignCompiler_CustomScriptDirPath)] } {
+      set dir_path $env(DesignCompiler_CustomScriptDirPath)
+      if { $dir_path ne "" } {
+         set script [file join $dir_path dc_${stage}.tcl]
+         if { [file exists $script] } {
+            set cmd "source $script"
+            set msg [list run custom script $script]
+            uplevel 1 [list run_cmd $cmd $msg]
+         }
+      }
+   }
+}
+
+
+# Source potential custom script
+source_custom_script initial
+## Configure technology settings
+set target_library sample_065nm.db
+set link_library {* sample_065nm.db dw_foundation.sldb standard.sldb}
+set synthetic_library {dw_foundation.sldb standard.sldb}
+
+## Configure design license usage
+set synlib_dont_get_license {}
+set synlib_wait_for_design_license DesignWare
+
+
+## Define library WORK
+if { [file isdirectory "work"] } {
+  file delete -force -- "work"
+}
+puts "Note: Creating directory work"
+file mkdir "work"
+define_design_lib "WORK" -path "work"
+puts "Note: Mapped design library WORK => work"
+run_cmd {analyze -format "verilog" $MGC_HOME/pkgs/siflibs/ccs_in_v1.v} {analyze file 'ccs_in_v1.v'}
+run_cmd {analyze -format "verilog" $MGC_HOME/pkgs/siflibs/ccs_sync_out_vld_v1.v} {analyze file 'ccs_sync_out_vld_v1.v'}
+run_cmd {analyze -format "verilog" $RTL_TOOL_SCRIPT_DIR/rtl.v} {analyze file 'rtl.v'}
+
+## Elaborate design Connections_OutBlocking_SysPE_InputType_Connections_SYN_PORT_Push 
+run_cmd {elaborate "Connections_OutBlocking_SysPE_InputType_Connections_SYN_PORT_Push"} {elaborate Connections_OutBlocking_SysPE_InputType_Connections_SYN_PORT_Push {}}
+
+
+# Source potential custom script
+source_custom_script analyze
+
+# Use buffers instead of assignment statements in the Verilog netlist,
+# per Design Compiler Reference Methodology recommendations
+set_fix_multiple_port_nets -all -buffer_constants
+
+##  Synthesize toplevel design
+
+## Apply SDC constraints
+read_sdc $RTL_TOOL_SCRIPT_DIR/rtl.v.dc.sdc -version 1.7
+set auto_wire_load_selection false
+
+puts "[clock format [clock seconds] -format {%a %b %d %H:%M:%S %Z %Y}]"
+
+
+# Source potential custom script
+source_custom_script synthesis
+
+puts "-- Starting synthesis for design 'Connections::OutBlocking<SysPE::InputType,Connections::SYN_PORT>::Push'"
+uniquify
+set wait_ctrl_inst [find -hierarchy cell {*_triosy_obj_inst *_synci_inst *_staller_inst *_rsci*_inst}]
+if { [llength $wait_ctrl_inst ] > 0 } {
+  ungroup $wait_ctrl_inst -flatten
+}
+if { [lindex [split $compatibility_version "-"] 1] < "2007.03" } {
+  compile -map_effort medium -boundary_optimization  
+} else {
+  compile -map_effort medium -boundary_optimization    
+}
+
+# Source potential custom script
+source_custom_script reports
+
+set high_fanout_net_threshold 0
+puts "-- Requested 4 fractional digits for design 'Connections::OutBlocking<SysPE::InputType,Connections::SYN_PORT>::Push' timing"
+puts "-- Requested 3 fractional digits for design 'Connections::OutBlocking<SysPE::InputType,Connections::SYN_PORT>::Push' capacitance"
+puts "-- Tool output delay factor to nS: 1.0"
+puts "-- ToolID: '${sh_product_version}'"
+puts "-- Characterization mode: p2p "
+puts "-- Synthesis area report for design 'Connections::OutBlocking<SysPE::InputType,Connections::SYN_PORT>::Push'"
+report_area -hierarchy
+puts "-- END Synthesis area report for design 'Connections::OutBlocking<SysPE::InputType,Connections::SYN_PORT>::Push'"
+
+if { $enable_timing_reporting } {
+   puts "Timing reporting started "
+   set clk_candidates {0 INOUT ccs_MIO_clk ccs_MIO_clk 7 IN m_rsc_dat m_rsc_dat 0 INOUT ccs_ccore_start_rsc_dat ccs_ccore_start_rsc_dat 0 IN this_rdy this_rdy} 
+   set i_candidates {7 IN m_rsc_dat m_rsc_dat 0 INOUT ccs_ccore_start_rsc_dat ccs_ccore_start_rsc_dat 0 IN this_rdy this_rdy} 
+   set o_candidates {0 INOUT ccs_ccore_done_sync_vld ccs_ccore_done_sync_vld 0 OUT this_val this_val 0 OUT this_msg this_msg} 
+   foreach { orsid orsmode iclk ote } $clk_candidates {
+   puts "Timing reporting for orsid=$orsid orsmode=$orsmode iclk=$iclk ote=$ote "
+      foreach { irsid irsmode iport ite } $i_candidates {
+         if { [llength [get_clocks -quiet $iclk] ] > 0 && [llength [all_registers -clock $iclk ] ] > 0 } {
+            puts "-- Synthesis input_to_register:timing report for design 'Connections::OutBlocking<SysPE::InputType,Connections::SYN_PORT>::Push' '${irsid}' '${irsmode}' port '${ite}' '${orsid}' '${orsmode}' CLOCK '${ote}'"
+            report_timing -nosplit -significant_digits 4 -capacitance -from ${iport} -to [all_registers -data_pins -clock $iclk ] 
+            puts "-- END Synthesis input_to_register:timing report for design 'Connections::OutBlocking<SysPE::InputType,Connections::SYN_PORT>::Push' '${irsid}' '${irsmode}' port '${ite}' '${orsid}' '${orsmode}' CLOCK '${ote}'"
+         }
+      }
+   }
+   foreach { orsid orsmode oclk ote } $clk_candidates {
+      foreach { irsid irsmode iclk ite } $clk_candidates {
+         if { [llength [get_clocks -quiet ${iclk}] ] > 0 && [llength [get_clocks -quiet ${oclk}] ] > 0 && [llength [all_registers -clock ${iclk}] ] > 0 && [llength [all_registers -clock ${oclk}] ] > 0 } {
+            puts "-- Synthesis register_to_register:timing report for design 'Connections::OutBlocking<SysPE::InputType,Connections::SYN_PORT>::Push' '${irsid}' '${irsmode}' CLOCK '${ite}' '${orsid}' '${orsmode}' CLOCK '${ote}'"
+            report_timing -nosplit -significant_digits 4 -capacitance -from [all_registers -clock_pins -clock ${iclk}] -to [all_registers -data_pins -clock ${oclk}] 
+            puts "-- END Synthesis register_to_register:timing report for design 'Connections::OutBlocking<SysPE::InputType,Connections::SYN_PORT>::Push' '${irsid}' '${irsmode}' CLOCK '${ite}' '${orsid}' '${orsmode}' CLOCK '${ote}'"
+         }
+      }
+   }
+   foreach { orsid orsmode oport ote } $o_candidates {
+      foreach { irsid irsmode iclk ite } $clk_candidates {
+         if { [llength [get_clocks -quiet ${iclk}] ] > 0 && [llength [all_registers -clock ${iclk}] ] > 0 } {
+            puts "-- Synthesis register_to_output:timing report for design 'Connections::OutBlocking<SysPE::InputType,Connections::SYN_PORT>::Push' '${irsid}' '${irsmode}' CLOCK '${ite}' '${orsid}' '${orsmode}' port '${ote}'"
+            report_timing -nosplit -significant_digits 4 -capacitance -from [all_registers -clock_pins -clock ${iclk}] -to ${oport}
+            puts "-- END Synthesis register_to_output:timing report for design 'Connections::OutBlocking<SysPE::InputType,Connections::SYN_PORT>::Push' '${irsid}' '${irsmode}' CLOCK '${ite}' '${orsid}' '${orsmode}' port '${ote}'"
+         }
+      }
+   }
+   foreach { orsid orsmode oport ote } $o_candidates {
+      foreach { irsid irsmode iport ite } $i_candidates {
+         puts "-- Synthesis input_to_output:timing report for design 'Connections::OutBlocking<SysPE::InputType,Connections::SYN_PORT>::Push' '${irsid}' '${irsmode}' port '${ite}' '${orsid}' '${orsmode}' port '${ote}'"
+         report_timing -nosplit -significant_digits 4 -capacitance -from ${iport} -to ${oport}
+         puts "-- END Synthesis input_to_output:timing report for design 'Connections::OutBlocking<SysPE::InputType,Connections::SYN_PORT>::Push' '${irsid}' '${irsmode}' port '${ite}' '${orsid}' '${orsmode}' port '${ote}'"
+      }
+   }
+} else {
+   puts "Timing reporting turned off in the script "
+}
+if {$hls_status} {
+  puts "Warning: Check transcript for errors hls_status=$hls_status"
+}
+puts "[clock format [clock seconds] -format {%a %b %d %H:%M:%S %Z %Y}]"
+set dc_bin_fmt ddc
+if { [lindex [split $compatibility_version "-"] 1] < "2006.06" } {
+    set dc_bin_fmt db
+}
+write -hierarchy -format $dc_bin_fmt -output gate.dc.v.$dc_bin_fmt
+change_names -hierarchy -rules vhdl
+write -hierarchy -format vhdl -output /home/billyk/.catapult/Cache/10_4b_841621/ModularIO/15885300947641a9c4.4/./gate.dc.v.vhdl
+write_sdc /home/billyk/.catapult/Cache/10_4b_841621/ModularIO/15885300947641a9c4.4/./gate.dc.v.sdc
+write_sdf /home/billyk/.catapult/Cache/10_4b_841621/ModularIO/15885300947641a9c4.4/./gate.dc.v.sdf
+# Source potential custom script
+source_custom_script final
+
+cd ..
+
+puts "-- Synthesis finished for design 'Connections::OutBlocking<SysPE::InputType,Connections::SYN_PORT>::Push'"
+
